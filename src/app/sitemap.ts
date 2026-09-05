@@ -68,23 +68,43 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
-  // Ambil semua artikel blog aktif secara dinamis dari database SQLite
+  // Daftar slug artikel resmi PT Biotek Agro Nusantara
+  const defaultBlogSlugs = [
+    "ciri-ciri-tanah-sehat-vs-tanah-rusak-kimia",
+    "cara-perbanyak-anakan-padi-secara-alami",
+    "pupuk-hayati-untuk-sawit-apa-yang-perlu-diketahui",
+    "gejala-klowor-pada-padi-dan-penanganannya",
+    "probiotik-untuk-ayam-broiler-cara-kerja-dan-dosis",
+    "cara-atasi-tanah-asam-pada-padi",
+    "mengapa-tanah-rusak-akibat-pupuk-kimia",
+    "peran-mikroba-pelarut-fosfat-untuk-tanaman",
+  ];
+
   try {
     const posts = await db.post.findMany({
       where: { published: true },
       select: { slug: true, updatedAt: true },
     });
 
-    const dynamicRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
-      url: `${baseUrl}/blog/${post.slug}`,
-      lastModified: post.updatedAt,
-      changeFrequency: "weekly",
-      priority: 0.85,
-    }));
-
-    return [...staticRoutes, ...dynamicRoutes];
-  } catch (err) {
-    console.error("Error generating sitemap:", err);
-    return staticRoutes;
+    if (Array.isArray(posts) && posts.length > 0) {
+      const dynamicRoutes: MetadataRoute.Sitemap = posts.map((post) => ({
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: post.updatedAt,
+        changeFrequency: "weekly",
+        priority: 0.85,
+      }));
+      return [...staticRoutes, ...dynamicRoutes];
+    }
+  } catch {
+    // Graceful fallback ke daftar artikel default jika db belum aktif saat static prerender
   }
+
+  const fallbackRoutes: MetadataRoute.Sitemap = defaultBlogSlugs.map((slug) => ({
+    url: `${baseUrl}/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.85,
+  }));
+
+  return [...staticRoutes, ...fallbackRoutes];
 }
