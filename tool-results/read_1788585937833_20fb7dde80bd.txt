@@ -1,0 +1,561 @@
+     1→     1→# MASTER PROMPT — PT Aegis Soil Health & BIO7
+     2→     2→
+     3→     3→Build a complete corporate identity, website, and marketing strategy for **PT Aegis Soil Health** and its flagship product **BIO7**. All output must be production-ready, mobile-first, fast-loading, SEO-friendly, easily maintained by ONE non-technical person (Aris, the founder-marketer). Stack and framework choice is yours — pick whatever best fits a static-deploy Cloudflare Pages workflow with potential to grow. This prompt is self-contained; you have no other inputs beyond what is written here.
+     4→     4→
+     5→     5→---
+     6→     6→
+     7→     7→## 1. CORPORATE CONTEXT
+     8→     8→
+     9→     9→### 1.1 The founder
+    10→    10→**Aris Setiadi** is the appointed exclusive marketer of BIO7. He is a solo founder-marketer with ~12 hours/day available, zero existing distribution network, zero marketing budget, working from a PC. He communicates in Bahasa Indonesia, casual-yet-considerate register. He is the only point of contact for ALL buyers (B2B, B2C, reseller, end-user). No resellers, no distributors — Aris sells direct.
+    11→    11→
+    12→    12→### 1.2 The product — BIO7 (NOT "Bio7 Padi")
+    13→    13→**BIO7 is a multi-purpose microbial bioactivator**. Earlier branding ("BIO7 Padi") targeted rice farmers only. The current strategic goal is to rebrand BIO7 as multipurpose while still serving rice farmers as the strongest entry market.
+    14→    14→
+    15→    15→**BIO7 is for:**
+    16→    16→- **Agriculture** (rice, horticulture, secondary crops — content exists for rice only, must extrapolate for others)
+    17→    17→- **Plantations** (oil palm, coffee, cocoa, fruit trees — no content yet, must extrapolate)
+    18→    18→- **Livestock** (probiotic drinking water, feed fermentation, barn sanitation — no content yet, must extrapolate)
+    19→    19→
+    20→    20→**BIO7 is NOT positioned for human consumption in marketing.** Skip all human-use claims (oral/topical). The founder explicitly excluded this scope.
+    21→    21→
+    22→    22→---
+    23→    23→
+    24→    24→## 2. VERIFIED PRODUCT DATA (full source-of-truth — embed in your output)
+    25→    25→
+    26→    26→### 2.1 Brand identity
+    27→    27→- **Company**: PT Aegis Soil Health
+    28→    28→- **Product**: BIO7 — Multi-Microbial Bioactivator & Soil Bioremediation Agent
+    29→    29→- **Product subtitle / positioning**: "Decomposes toxic agrochemical residues, neutralizes soil acidity, reactivates native subterranean biology with an ultra-dense living microbial consortium."
+    30→    30→- **Tagline options** (pick or refine one): "Beyond Fertilization. True Microbial Soil Restoration." / "Mikroba untuk Tanah yang Lebih Hidup."
+    31→    31→
+    32→    32→### 2.2 Verified microbial composition (CFU/ml)
+    33→    33→- *Azospirillum* sp.: 3.10 × 10⁷
+    34→    34→- *Pseudomonas* sp.: 4.00 × 10⁸
+    35→    35→- *Bacillus* sp.: 1.30 × 10⁸
+    36→    36→- *Streptomyces* sp.: 1.83 × 10⁹
+    37→    37→- N-Fixing consortium: 3.10 × 10¹⁰
+    38→    38→- P-Solubilizing consortium: 9.27 × 10⁷
+    39→    39→
+    40→    40→### 2.3 Phytohormones and bioactive complexes
+    41→    41→- Auxin (Indole-3-Acetic Acid / IAA)
+    42→    42→- Gibberellin (GA3 complex)
+    43→    43→- Cytokinin (Zeatin & Kinetin-derived)
+    44→    44→- Bioactive fulvic & humic polyelectrolytes
+    45→    45→
+    46→    46→### 2.4 Safety verified
+    47→    47→- Pathogenicity: Negative
+    48→    48→- *E. coli*: Negative (0 CFU/ml)
+    49→    49→- *Salmonella* sp.: Negative (0 CFU/ml)
+    50→    50→
+    51→    51→### 2.5 Certifications
+    52→    52→- **KEMENTAN RI Registration**: 03.02.2026.156
+    53→    53→- **UNPAD Certificate of Analysis** (Faculty of Agriculture, Universitas Padjadjaran): No. B-0529/12/2025, issued 15 January 2026
+    54→    54→- **Shelf life**: guaranteed through July 2032
+    55→    55→
+    56→    56→### 2.6 Pricing
+    57→    57→- **HET (Maximum Retail Price) — set by manufacturer, NOT negotiable for standard channel:**
+    58→    58→  - Java Island: IDR 55,000 / 1-liter bottle
+    59→    59→  - Outside Java: IDR 65,000 / 1-liter bottle
+    60→    60→- **Dropship model**: Aris sources per-order from manufacturer
+    61→    61→- **Cost basis**: IDR 40,000 per bottle
+    62→    62→- **OEM / white-label exception**: Aris has full authority for export-scale and OEM/private-label arrangements where he sets his own price above HET.
+    63→    63→
+    64→    64→### 2.7 Contact (official, single channel)
+    65→    65→- **Website**: https://aegissoilhealth.com (already live on Cloudflare Pages)
+    66→    66→- **WhatsApp / Call Center**: (+62) 852 2121 2223 — `https://wa.me/6285221212223`
+    67→    67→- **Email**: catch-all on @aegissoilhealth.com
+    68→    68→- **Marketplace listings** (already exist): Shopee, Tokopedia, Lazada (search "BIO7 Aegis Soil Health")
+    69→    69→
+    70→    70→### 2.8 Producer
+    71→    71→- Producer: PT Biotek Agro Nusantara, Bandung
+    72→    72→- BIO7 has been in market for 20+ years with no serious marketing — Aris's role is to bring professional marketing.
+    73→    73→
+    74→    74→---
+    75→    75→
+    76→    76→## 3. RICE SECTOR PROTOCOLS — complete source content
+    77→    77→
+    78→    78→These protocols are field-tested. Translate faithfully into Bahasa Indonesia for /padi sub-page.
+    79→    79→
+    80→    80→### 3.1 General rules (apply to all rice applications)
+    81→    81→- **Seed soaking**: 1 cap per 3 liters water, soak 24 hours.
+    82→    82→- **Nursery spray**: 7 caps per 16L tank, spray every 5 days.
+    83→    83→- **Tank-mix compatibility**: can be mixed with chemical insecticides/fungicides.
+    84→    84→- **Strict prohibition**: do NOT mix with herbicides. Maintain minimum 7-day interval between BIO7 and any chemical herbicide (e.g., Paraquat, Glyphosate).
+    85→    85→- **Urea rule**: from 30 HST onwards, solid Urea is strictly forbidden. (Broadcast or spray Urea after 30 HST thins plant epidermal cell walls, causing sheath blight, neck blast / Pyricularia oryzae, and lodging.)
+    86→    86→- **Shelf life**: guaranteed viable through July 2032.
+    87→    87→
+    88→    88→### 3.2 Protocol A — Super Tiller Generation (Super Anakan)
+    89→    89→**Timing**: 15, 22, and 30 Days After Transplanting (HST/DAT)
+    90→    90→**Objective**: trigger explosive production of productive tillers (target 35–50 stems/hill), prevent seedling chlorosis and root stagnation.
+    91→    91→
+    92→    92→**Tank-mix per 16L knapsack sprayer:**
+    93→    93→
+    94→    94→| Input | Dosage | Function |
+    95→    95→|---|---|---|
+    96→    96→| BIO7 | 5–7 caps (50–70 ml) | Microbial root colonization, biological N/P mobilization |
+    97→    97→| Ultradap (Mono-Ammonium Phosphate) | 3–4 tablespoons (45–60 g) | Readily available P for deep root energy, active tiller initiation |
+    98→    98→| CALNIT (Calcium Nitrate, 15.5% N, 26% CaO) | 2–3 tablespoons (30–45 g) | Nitrate-N + soluble Ca to thicken cell walls, prevent lodging |
+    99→    99→| MgSO4 (Magnesium Sulfate) | 1–2 tablespoons (15–30 g) | Chlorophyll activator, photosynthesis under cloudy skies |
+   100→   100→| Fitoflex (chelated micronutrient complex) | 1 sachet (2.5 g) | Trace elements (Zn, Cu, Fe, Mn, B, Mo), prevents hidden micro-hunger in acidic soils |
+   101→   101→
+   102→   102→**Basal fertilizer (per hectare):**
+   103→   103→- 5 HST: Urea 25 kg + Phonska 25 kg
+   104→   104→- 10–15 HST: Urea 100 kg + Phonska 100 kg
+   105→   105→- 30 HST (optional): Phonska 200 kg + Fertiphos 50 kg for 8 t/ha target; Phonska PLUS 200 kg + Fertiphos 50 kg for 10 t/ha target
+   106→   106→
+   107→   107→**Application technique:**
+   108→   108→- Spray mist toward base of plant hills and root zone
+   109→   109→- Time: early morning (06:00–09:00) or late afternoon (15:30–17:30)
+   110→   110→- Soil condition: moist/muddy (macak-macak), not parched
+   111→   111→- Never spray during scorching midday sun (10:00–14:00) — UV kills beneficial bacteria
+   112→   112→- If rain falls within 2 hours of application, re-apply at half dosage once weather clears
+   113→   113→
+   114→   114→### 3.3 Protocol B — Panicle Extension & Disease Shield (Perpanjang Malai)
+   115→   115→**Timing**: 40, 47 HST, and when flowers are uniform across the field
+   116→   116→**Objective**: 99% of tillers produce panicles; suppress neck blast / kresek and sheath blight; deactivate walang sangit.
+   117→   117→
+   118→   118→**Tank-mix per 16L tank:**
+   119→   119→
+   120→   120→| Input | Dosage | Function |
+   121→   121→|---|---|---|
+   122→   122→| BIO7 | 7–10 caps | Bioconversion, supports grain filling |
+   123→   123→| Meroke MKP (52% P₂O₅, 34% K₂O) | 5 tablespoons (≈25 g) | Phosphorus-potassium, panicle energy |
+   124→   124→| CALNIT | 2 tablespoons (≈20 g) | Nitrogen + calcium, firm panicles |
+   125→   125→| MgSO4 | 1 tablespoon | Photosynthesis support |
+   126→   126→| Fitoflex | 1 sachet (2.5 g) | Complete micronutrients |
+   127→   127→| Auksin Murni (pure auxin, PT Natural Agrisains Indonesia) | 1 sachet (5 g) | Root-stimulating hormone, strengthens uptake |
+   128→   128→
+   129→   129→**Basal fertilizer (per hectare, 40–45 HST)**: KCl 100 kg + Fertiphos 100 kg. Target: 12 tonnes GKP/ha.
+   130→   130→
+   131→   131→**Water management**: flood field to 5 cm depth from start of this phase until the tips of the panicles begin to yellow. Maintain continuously.
+   132→   132→
+   133→   133→### 3.4 Protocol C — Grain Enlargement (Perbesar Bulir)
+   134→   134→**Timing**: when panicles begin to bend/curve (1–2 sprays, 7-day interval)
+   135→   135→**Water management**: continue flooding to 5 cm depth.
+   136→   136→
+   137→   137→**Tank-mix per 16L tank:**
+   138→   138→
+   139→   139→| Input | Dosage | Function |
+   140→   140→|---|---|---|
+   141→   141→| BIO7 | 7 caps | Hayati (biological) |
+   142→   142→| KNO3 putih (Pupuk Crystal, 2 kg pack) | 5 tablespoons | Nitrogen-potassium for grain bulking |
+   143→   143→| MgSO4 | 2 tablespoons | Magnesium + sulfur |
+   144→   144→| TaniSIL (silika murni / pure silica) | 1 tablespoon | Strengthens stalk and grain |
+   145→   145→| Giberelin Murni (pure gibberellin, hormone for flower & fruit stimulation) | 1 sachet (5 g) | Flower/fruit stimulation hormone |
+   146→   146→
+   147→   147→### 3.5 Protocol D — Grain Filling & Maturation (Pergemuk & Matang Bulir)
+   148→   148→**Timing**: when panicle tips start yellowing (1–2 sprays, 5-day interval)
+   149→   149→**Water management**: drain field to dry until harvest — accelerates maturation, eases harvest.
+   150→   150→
+   151→   151→**Tank-mix per 16L tank:**
+   152→   152→
+   153→   153→| Input | Dosage | Function |
+   154→   154→|---|---|---|
+   155→   155→| BIO7 | 10 caps | Hayati (biological) |
+   156→   156→| MerokeSOP (52% K₂O, 18% S, 1 kg) | 7 tablespoons | Potassium + sulfur for grain filling |
+   157→   157→| MgSO4 | 3 tablespoons | Magnesium + sulfur, photosynthesis, grain quality |
+   158→   158→
+   159→   159→### 3.6 Emergency protocol — Acid soil / pH drop recovery
+   160→   160→**Symptoms addressed**: padi kerdil (stunted), klowor, ambles (damping-off), daun merah/kuning (red/yellow leaves), sundep, akar coklat (brown root), tungro virus.
+   161→   161→
+   162→   162→**Procedure:**
+   163→   163→1. **Stop broadcasting Urea** for the entire season.
+   164→   164→2. **Drain field** until saturated/asat (does not need to be hairline-cracked dry).
+   165→   165→4. Spray 3 times, 1-day interval (e.g., Senin – Rabu – Jumat).
+   166→   166→
+   167→   167→**Tank-mix per 16L tank ("Sapu Jagat" formula):**
+   168→   168→
+   169→   169→| Input | Dosage | Function |
+   170→   170→|---|---|---|
+   171→   171→| BIO7 | 13 caps | Hayati |
+   172→   172→| Meroke MKP | 7 tablespoons | Phosphorus-potassium |
+   173→   173→| Dimehipo (active ingredient) | 75 ml | Insecticide |
+   174→   174→| Zinc Sulphate (or Antracol 2 tablespoons) | 3 tablespoons | Micronutrient / fungicide |
+   175→   175→
+   176→   176→**Basal fertilizer (per hectare)**: Phonska 100 kg + Fertiphos 100 kg.
+   177→   177→
+   178→   178→**Preventive use**: spray the same Sapu Jagat formula 1 & 3 days before planting.
+   179→   179→
+   180→   180→### 3.7 Horticulture & secondary crops
+   181→   181→- **Foliar spray**: 7 caps per 16L tank, every 7–10 days.
+   182→   182→- **Root drench**: 1 cap per 10 liters water; 1 glass per plant every 15–30 days.
+   183→   183→
+   184→   184→---
+   185→   185→
+   186→   186→## 4. PROVEN FIELD CASE
+   187→   187→
+   188→   188→**Karawang Model 2023** — Haji Karma's rice plot, Jayakerta District, Karawang Regency (national rice granary):
+   189→   189→- Verified yield: **12,600 kg (12.6 tonnes) per hectare**
+   190→   190→- Regional baseline (non-BIO7): 7,800 kg/ha
+   191→   191→- Result: **+61.5% yield vs local average**
+   192→   192→- 40% reduction in synthetic NPK fertilizer usage achieved
+   193→   193→- Plot size: 1 hectare
+   194→   194→
+   195→   195→---
+   196→   196→
+   197→   197→## 5. CORPORATE IDENTITY GUIDELINE (Deliverable A)
+   198→   198→
+   199→   199→Produce a complete CI document that Aris can use across all surfaces. The CI must work for solo execution (no agency) — meaning it must be simple enough that one non-designer can apply it consistently.
+   200→   200→
+   201→   201→### 5.1 Brand architecture
+   202→   202→- **Corporate**: PT Aegis Soil Health (the company)
+   203→   203→- **Product**: BIO7 (the flagship product, multi-purpose)
+   204→   204→- **Future products**: leave room but don't design yet
+   205→   205→
+   206→   206→### 5.2 Logo direction
+   207→   207→Describe (don't generate raster files):
+   208→   208→- **Wordmark** treatment for "BIO7" and for "Aegis Soil Health"
+   209→   209→- **Symbol/mark** concept (semantic, not just decorative)
+   210→   210→- **Variants**: primary full-lockup, symbol-only, monochrome, inverted
+   211→   211→- **Clear space, sizing, don'ts**
+   212→   212→
+   213→   213→Pick a visual direction that signals **scientific credibility + Indonesian-local warmth**, NOT generic corporate or generic "organic green". Justify each choice briefly.
+   214→   214→
+   215→   215→### 5.3 Color palette
+   216→   216→Define with hex values:
+   217→   217→- **Primary** (1–2 colors for brand recognition)
+   218→   218→- **Secondary** (supporting)
+   219→   219→- **Accent** (CTA, highlights)
+   220→   220→- **Neutrals** (backgrounds, text, dividers)
+   221→   221→
+   222→   222→Include semantic use rules (which color for what context) and accessibility notes (contrast ratios).
+   223→   223→
+   224→   224→### 5.4 Typography
+   225→   225→- **Heading** typeface (display)
+   226→   226→- **Body** typeface (reading)
+   227→   227→- Sizes scale (H1, H2, body, small) — recommend a free Google Font for each
+   228→   228→- Weights to load- Line-height, letter-spacing guidance
+   229→   229→
+   230→   230→### 5.5 Tone of voice (THE most important CI element)
+   231→   231→Define with concrete examples, NOT adjectives:
+   232→   232→
+   233→   233→- **Voice**: edukatif-praktis (educational-practical). Like a senior agronomist explaining to a farmer — credible, data-backed, but human and to-the-point.
+   234→   234→- **DO** examples (write 5 sample sentences)
+   235→   235→- **DON'T** examples (write 5 anti-examples)
+   236→   236→- **Bilingual rules**: Bahasa Indonesia is default. English for international. Same voice in both. Never translate literally.
+   237→   237→- **Forbidden words/phrases**: list5-10 generic marketing phrases BIO7 must never use (e.g., "solusi terbaik", "one-stop solution", "terdepan").
+   238→   238→
+   239→   239→### 5.6 Photography & visual style
+   240→   240→- **Preferred**: real field photos (Haji Karma's Karawang plot is the anchor)
+   241→   241→- **Acceptable**: clean product shots on neutral background
+   242→   242→- **Avoid**: stock photos, generic farming imagery, AI-generated people
+   243→   243→- **Color grading**: muted greens, earth tones, natural light
+   244→   244→- Specify how to handle when real photos don't exist (e.g., for livestock/plantation — placeholder system)
+   245→   245→
+   246→   246→### 5.7 Application checklist
+   247→   247→List all surfaces where the CI must be applied consistently:
+   248→   248→- Website (all pages)
+   249→   249→- WhatsApp Business profile photo + auto-replies
+   250→   250→- Marketplace listing images & descriptions
+   251→   251→- Social media (if any)
+   252→   252→- Email signatures
+   253→   253→- Future print (labels, brochures)
+   254→   254→
+   255→   255→---
+   256→   256→
+   257→   257→## 6. WEBSITE SPECIFICATION & INITIAL CONTENT (Deliverable B)
+   258→   258→
+   259→   259→### 6.1 Strategic constraints
+   260→   260→- **One domain**: aegissoilhealth.com (no subdomains)
+   261→   261→- **Multi-sector entry via sub-pages** (no scroll-sections on home)
+   262→   262→- **Bilingual**: default Bahasa Indonesia, English toggle
+   263→   263→- **Hero router**: visitor chooses their sector from the home page, gets directed to a sub-page
+   264→   264→- **Mobile-first**, fast load (target: <2s LCP on 3G), SEO-friendly
+   265→   265→- **Maintenance**: Aris (non-developer) must be able to edit content without touching code — choose tooling accordingly (markdown-based CMS, MDX, or a simple git-based content workflow with clear instructions)
+   266→   266→- **No frameworks that require a backend server**. Static or serverless-compatible only.
+   267→   267→
+   268→   268→### 6.2 Information architecture
+   269→   269→
+   270→   270→```
+   271→   271→/ → Home (hero router — Bahasa Indonesia default)
+   272→   272→/padi                     → Sector: Agriculture / Rice (deepest content)
+   273→   273→/kebun                    → Sector: Plantation & Horticulture
+   274→   274→/ternak                   → Sector: Livestock
+   275→   275→/tentang → About / Corporate / Certifications
+   276→   276→/kontak                   → Contact (form + WA + email)
+   277→   277→/blog → (placeholder structure, content to be added later)
+   278→   278→/privacy                  → Privacy policy
+   279→   279→/terms                    → Terms of service
+   280→   280→/disclaimer               → Agricultural claims disclaimer
+   281→   281→```
+   282→   282→
+   283→   283→### 6.3 Home (/) — the hero router
+   284→   284→
+   285→   285→Must contain ONLY:
+   286→   286→- **Brand mark** (Aegis Soil Health + BIO7)
+   287→   287→- **One-sentence value proposition** in Bahasa Indonesia
+   288→   288→- **Three large buttons** routing to /padi, /kebun, /ternak — each with sector icon + 1-line sector pitch
+   289→   289→- **One secondary CTA**: "Belum yakin? Konsultasi gratis via WhatsApp" → wa.me link
+   290→   290→- **Footer minimal**: cert badges (KEMENTAN, UNPAD), WA + email contact, language toggleDO NOT include on home: detailed product specs, protocols, testimonials, FAQ. Those belong in sub-pages. The home is a router, not a brochure.
+   291→   291→
+   292→   292→### 6.4 Sub-page: /padi (the deepest page, content-rich)
+   293→   293→
+   294→   294→Render all protocols in Section 3 above faithfully in Bahasa Indonesia. Sections in order:
+   295→   295→
+   296→   296→1. Hero (sector-specific value prop, 1 CTA to WhatsApp)
+   297→   297→2. Quick pitch: what BIO7 does for rice (3 bullet points max)
+   298→   298→3. Verified credentials (KEMENTAN + UNPAD badges)
+   299→   299→4. General rules (urea ban, herbicide 7-day rule, tank-mix compatibility) — from §3.1
+   300→   300→5. The 4 standard protocols as scannable tables — from §3.2–3.5
+   301→   301→6. Emergency protocol: tanah asam / pH drop recovery — from §3.6
+   302→   302→7. Horticulture & secondary crops — from §3.7
+   303→   303→8. Field proof: Karawang 2023 case study — from §4
+   304→   304→9. Pricing card (Java / Outside Java)
+   305→   305→10. WhatsApp CTA (multiple, contextual)
+   306→   306→
+   307→   307→### 6.5 Sub-page: /kebun
+   308→   308→
+   309→   309→Sections:
+   310→   310→1. Hero
+   311→   311→2. What BIO7 does for plantations — extrapolated from microbial mechanism (N-fixing, P-solubilizing, residue bioremediation, antifungal). Clearly labeled as application guidance, not field-validated yet for plantations.
+   312→   312→3. Application guidance — extrapolate from §3.7 (foliar 7 caps/16L every 7–10 days; root drench 1 cap/10L per plant every 15–30 days)
+   313→   313→4. Crops covered — oil palm, coffee, cocoa, durian, mango, chili, tomato, cabbage, onion (list with short notes per crop)
+   314→   314→5. CTA: WhatsApp consultation (honest framing: "Belum ada uji lapangan spesifik untuk perkebunan — konsultasi gratis untuk dosis yang disesuaikan")
+   315→   315→6. Pricing card
+   316→   316→
+   317→   317→### 6.6 Sub-page: /ternak
+   318→   318→
+   319→   319→Sections:
+   320→   320→1. Hero
+   321→   321→2. What BIO7 does for livestock — extrapolated from mechanism. Three applications:
+   322→   322→   - **Probiotic drinking water** (improves gut flora, nutrient absorption)
+   323→   323→   - **Feed fermentation** (probiotic-treated feed, easier digestion)
+   324→   324→   - **Barn sanitation** (microbial competition reduces pathogen load)
+   325→   325→   All clearly labeled as application guidance, not field-validated for livestock yet.
+   326→   326→3. Application guidance per livestock type (extrapolated, mark as guidance):
+   327→   327→   - **Broiler / layer (ayam)**: 1–2 caps per liter drinking water, 3–5 days per month
+   328→   328→   - **Ruminants (sapi/kambing)**: 5–10 caps per head per day, mixed in feed or water
+   329→   329→   - **Aquaculture (ikan/udang)**: 1 cap per 100 m³ water, weekly
+   330→   330→4. CTA: WhatsApp consultation
+   331→   331→5. Pricing card — note: livestock usage is dosage-different from crop usage; call out clearly.
+   332→   332→
+   333→   333→### 6.7 /tentang
+   334→   334→- Company mission: liberating agricultural soils from chemical toxicity
+   335→   335→- The consortium advantage: explaining multi-microbial synergy vs single-strain inoculants
+   336→   336→- Certifications display (KEMENTAN, UNPAD)
+   337→   337→- Producer info (PT Biotek Agro Nusantara, Bandung)
+   338→   338→- 20+ year history note
+   339→   339→
+   340→   340→### 6.8 /kontak
+   341→   341→- WhatsApp button (wa.me/6285221212223) — primary CTA
+   342→   342→- Email: email@aegissoilhealth.com
+   343→   343→- Marketplace links (Shopee, Tokopedia, Lazada)
+   344→   344→- Operating hours: Mon-Sat 07:30-17:30 WIB
+   345→   345→- Simple contact form (Name, WhatsApp, Location, Sector interest, Message) — form submission opens pre-filled WhatsApp message
+   346→   346→
+   347→   347→### 6.9 /blog
+   348→   348→Placeholder page. Structure only:
+   349→   349→- Article list (empty for now)
+   350→   350→- Layout for future SEO articles
+   351→   351→
+   352→   352→### 6.10 /privacy, /terms, /disclaimer
+   353→   353→For each, write a clear 1-paragraph description of what topics must be covered (data handling, refund/return, agricultural claims disclaimer). Aris will finalize legal text with his own counsel.
+   354→   354→
+   355→   355→### 6.11 Header navigation (consistent across all sub-pages)
+   356→   356→- Logo (left)
+   357→   357→- Language toggle ID/EN (right)
+   358→   358→- Single persistent WhatsApp button (right)
+   359→   359→
+   360→   360→DO NOT put a sector-navigation menu in the header. Aris's concern is that visitors feel "this is the page for me", not "this is a multi-sector site".
+   361→   361→
+   362→   362→### 6.12 Footer (all pages)
+   363→   363→- Cert badges
+   364→   364→- Marketplace links (Shopee, Tokopedia, Lazada)
+   365→   365→- Contact (WA, email)
+   366→   366→- Cross-link to other sectors (subtle, not loud — "Aplikasi Bio7 untuk sektor lain: Perkebunan · Peternakan")
+   367→   367→- Copyright + regulatory disclaimer link
+   368→   368→
+   369→   369→### 6.13 Component requirements
+   370→   370→- **WhatsApp CTA buttons** with pre-filled message templates per page context (different message for /padi vs /kebun vs /ternak vs general inquiry)
+   371→   371→- **Pricing card** component (reusable across sub-pages)
+   372→   372→- **Cert badge** component (KEMENTAN, UNPAD)
+   373→   373→- **Protocol table** component (for /padi)
+   374→   374→- **Sector card** component (for home router)
+   375→   375→- **FAQ accordion** (at minimum one per sub-page)
+   376→   376→- **Bilingual toggle** component (URL state OR localStorage state — pick what's simplest)
+   377→   377→
+   378→   378→### 6.14 SEO requirements
+   379→   379→- Each page: unique `<title>`, meta description, OG tags
+   380→   380→- Bahasa Indonesia content indexed by default; English content via `/en/` route OR via toggle rendering (your choice — pick what's simplest)
+   381→   381→- Sitemap.xml auto-generated
+   382→   382→- Schema.org Product markup on /padi at minimum
+   383→   383→- Robots.txt- Canonical URLs
+   384→   384→
+   385→   385→### 6.15 Accessibility
+   386→   386→- WCAG 2.1 AA color contrast minimum
+   387→   387→- Semantic HTML
+   388→   388→- Keyboard-navigable
+   389→   389→- Alt text on all images
+   390→   390→- Mobile tap targets ≥44px
+   391→   391→
+   392→   392→### 6.16 Performance
+   393→   393→- <2s LCP target on mobile 3G
+   394→   394→- Lazy-load images
+   395→   395→- Inline critical CSS
+   396→   396→- No render-blocking JS for above-fold content
+   397→   397→
+   398→   398→---
+   399→   399→
+   400→   400→## 7. MARKETING STRATEGY (Deliverable C)
+   401→   401→
+   402→   402→Produce a 90-day, solo-execution, Rp0-budget marketing plan that Aris can implement using only: this AI agent, his PC, his time (~12h/day), and the website you just built.
+   403→   403→
+   404→   404→### 7.1 Strategy framework
+   405→   405→- **Inbound (pull)**: SEO content + marketplace listings- **Outbound (push)**: WhatsApp community engagement + free sampling to strategic early adopters
+   406→   406→- **Referral**: encourage buyer-to-buyer word-of-mouth with simple mechanics
+   407→   407→
+   408→   408→### 7.2 Channel priorities (in order)
+   409→   409→For each channel, give a concrete 4-week action plan with specific deliverables, not generic advice:
+   410→   410→
+   411→   411→1. **WhatsApp Business** setup + status
+   412→   412→3. **Marketplace optimization** (Shopee, Tokopedia, Lazada)
+   413→   413→4. **Google Business Profile**
+   414→   414→5. **Facebook** (groups, page)
+   415→   415→6. **YouTube** (long-form demo content)
+   416→   416→7. **TikTok** (short-form demo content)
+   417→   417→
+   418→   418→### 7.3 Content calendar (90 days)
+   419→   419→Provide a week-by-week plan listing what content to create, on which channel, with topic. Prioritize rice sector for first 60 days, then expand.
+   420→   420→
+   421→   421→### 7.4 SEO content plan
+   422→   422→List 20 article topics for /blog that target high-intent Indonesian search terms. Each topic: target keyword, search intent, estimated word count, internal link targets. Focus on real problems Indonesian farmers Google for.
+   423→   423→
+   424→   424→Suggested topic seeds (use or improve):
+   425→   425→- "Cara atasi tanah asam pada padi" (tanah masam, pH drop, klowor, ambles)
+   426→   426→- "Pupuk hayati untuk sawit: apa yang perlu diketahui"
+   427→   427→- "Probiotik untuk ayam broiler: cara kerja dan dosis"
+   428→   428→- "Mengapa urea dilarang setelah 30 HST"
+   429→   429→- "Jarak aman BIO7 dengan herbisida"
+   430→   430→- "Ciri-ciri tanah sehat vs tanah rusak kimia"
+   431→   431→- "Cara perbanyak anakan padi secara alami"
+   432→   432→- etc.
+   433→   433→
+   434→   434→### 7.5 Free sampling strategy
+   435→   435→Suggest a structured free-sampling approach (who, how many, what to ask them to do in return) that builds credible testimonials without spending money. Target: at least 3 documented testimonials within 90 days.
+   436→   436→
+   437→   437→### 7.6 B2B outreach script
+   438→   438→Write3 ready-to-send WhatsApp message templates for: (a) approaching a Gapoktan head, (b) approaching a smallholder cooperative, (c) approaching an agricultural kiosk owner.
+   439→   439→
+   440→   440→### 7.7 KPIs Aris should track weekly
+   441→   441→Define 5–7 metrics he can manually track without analytics tools (or with free Google Search Console only). Examples: WA inquiries/week, conversions to orders, repeat buyer count, marketplace listing views, etc.
+   442→   442→
+   443→   443→---
+   444→   444→
+   445→   445→## 8. DELIVERABLES — exact files to produce
+   446→   446→
+   447→   447→Output as a single code repository (or document bundle) containing:
+   448→   448→
+   449→   449→```
+   450→   450→/
+   451→   451→├── README.md                      ← Setup, deploy, content-edit instructions for Aris
+   452→   452→├── package.json (or equivalent)   ← Dependencies
+   453→   453→├── /docs
+   454→   454→│   ├── 01-corporate-identity.md   ← Deliverable A
+   455→   455→│   ├── 02-website-spec.md         ← Deliverable B (full architecture + content)
+   456→   456→│   ├── 03-marketing-strategy.md   ← Deliverable C
+   457→   457→│   └── 04-content-bahasa-indonesia.md  ← All Bahasa Indonesia copy, ready to paste
+   458→   458→├── /src (or framework folder)
+   459→   459→│   ├── /pages (or /app)
+   460→   460→│   │   ├── index.{ext}            ← Home hero router
+   461→   461→│   │   ├── /padi/index.{ext}      ← Rice sector (deepest)
+   462→   462→│   │   ├── /kebun/index.{ext}     ← Plantation
+   463→   463→│   │   ├── /ternak/index.{ext}    ← Livestock
+   464→   464→│   │   ├── /tentang/index.{ext}
+   465→   465→│   │   ├── /kontak/index.{ext}
+   466→   466→│   │   ├── /privacy/index.{ext}
+   467→   467→│   │   ├── /terms/index.{ext}
+   468→   468→│   │   └── /disclaimer/index.{ext}
+   469→   469→│   ├── /components
+   470→   470→│   │   ├── Header.{ext}
+   471→   471→│   │   ├── Footer.{ext}
+   472→   472→│   │   ├── WhatsAppCTA.{ext}
+   473→   473→│   │   ├── PricingCard.{ext}
+   474→   474→│   │   ├── CertBadge.{ext}
+   475→   475→│   │   ├── ProtocolTable.{ext}
+   476→   476→│   │   ├── SectorCard.{ext}
+   477→   477→│   │   └── LanguageToggle.{ext}
+   478→   478→│   ├── /styles
+   479→   479→│   ├── /content (or /data)
+   480→   480→│   │   ├── padi.md (or .json/.mdx)
+   481→   481→│   │   ├── kebun.md
+   482→   482→│   │   ├── ternak.md
+   483→   483→│   │   └── translations/ (for bilingual)
+   484→   484→│   └── /public/images/
+   485→   485→├── /public/sitemap.xml, robots.txt
+   486→   486→└── Configuration for static deploy to Cloudflare Pages
+   487→   487→```
+   488→   488→
+   489→   489→### 8.1 README.md must include
+   490→   490→- How to install dependencies
+   491→   491→- How to run locally (dev command)
+   492→   492→- How to deploy to Cloudflare Pages
+   493→   493→- **How to edit content without touching code** (the most important section — Aris is non-technical)
+   494→   494→- Where to put new blog posts
+   495→   495→- How to update the WhatsApp number, email, prices (single source-of-truth pattern)
+   496→   496→- How to add a new language
+   497→   497→
+   498→   498→---
+   499→   499→
+   500→   500→## 9. CONTENT QUALITY REQUIREMENTS
+   501→   501→
+   502→   502→### 9.1 Bahasa Indonesia copy
+   503→   503→- Use natural, professional Indonesian. Avoid both stiff corporate-speak AND overly casual "gue/lo" register.
+   504→   504→- Scientific names stay in Latin italic (*Azospirillum* sp.). Common names in Bahasa Indonesia (bakteri, mikroba, konsorsium).
+   505→   505→- Farm terms in Bahasa Indonesia with regional context (HST, kresek, klowor, sundep, ambles, walang sangit — keep as-is).
+   506→   506→- Numbers: write "12,6 ton" not "12.6 tonnes". Use Indonesian decimal/thousand separators consistently.
+   507→   507→- No exclamation marks in technical copy. Save emphasis for CTAs only.
+   508→   508→
+   509→   509→### 9.2 English copy
+   510→   510→- For international/English version only. The default audience is Indonesian.
+   511→   511→- Maintain the same edukatif-praktis voice in English.
+   512→   512→- Indonesian farm terms that don't translate cleanly: keep with Indonesian term + brief English gloss (e.g., "kresek (bacterial leaf blight)").
+   513→   513→
+   514→   514→### 9.3 Cross-sector consistency
+   515→   515→When describing BIO7 mechanism (how it works), use the SAME explanation across /padi, /kebun, /ternak. Only the application examples differ. This builds a coherent mental model.
+   516→   516→
+   517→   517→---
+   518→   518→
+   519→   519→## 10. NON-GOALS — do not produce
+   520→   520→
+   521→   521→- ❌ Any mention of human consumption / oral / skincare use of BIO7 (founder explicitly excluded)
+   522→   522→- ❌ Reseller / distributor onboarding flows (single-channel model only)
+   523→   523→- ❌ Payment gateway (Aris handles transactions via WhatsApp manually)
+   524→   524→- ❌ User accounts / login / authentication
+   525→   525→- ❌ E-commerce cart on the website (marketplace handles transactions)
+   526→   526→- ❌ Real-time chat widget (WhatsApp link only)
+   527→   527→- ❌ Multi-language beyond ID + EN in this version
+   528→   528→- ❌ Print design assets (CI must describe them, not produce raster files)
+   529→   529→- ❌ Paid advertising setup (out of budget, not requested)
+   530→   530→
+   531→   531→---
+   532→   532→
+   533→   533→## 11. EXECUTION ORDER (recommended)
+   534→   534→
+   535→   535→1. **Foundation first**: pick stack, set up project skeleton, configure Cloudflare Pages deploy.
+   536→   536→2. **Deliverable A (CI)**: write the CI document so it guides all visual decisions downstream.
+   537→   537→3. **Deliverable B (Website)**: build home router → /padi deep → /kebun → /ternak → /tentang → /kontak → legal pages.
+   538→   538→4. **Deliverable C (Marketing)**: write the strategy document with concrete 90-day plan.
+   539→   539→5. **README.md**: write the maintainer guide last — only when all content is settled.
+   540→   540→
+   541→   541→---
+   542→   542→
+   543→   543→## 12. ACCEPTANCE CRITERIA
+   544→   544→
+   545→   545→The build is complete when:
+   546→   546→- ✅ All pages render correctly on mobile (test on 360px, 414px, 768px, 1280px)
+   547→   547→- ✅ Bilingual toggle works on every page without breaking navigation
+   548→   548→- ✅ WhatsApp CTA appears on every page with context-appropriate pre-filled message
+   549→   549→- ✅ KEMENTAN + UNPAD badges visible on every sub-page
+   550→   550→- ✅ Pricing (Java/Outside Java) visible on every sector page
+   551→   551→- ✅ All 4 rice protocols rendered as scannable tables (not just paragraphs)
+   552→   552→- ✅ All protocol content from Section 3 of this prompt is faithfully represented in Bahasa Indonesia
+   553→   553→- ✅ /kebun and /ternak pages clearly mark extrapolated content as "application guidance — belum ada uji lapangan spesifik" (honest about what's verified vs extrapolated)
+   554→   554→- ✅ Build deploys to Cloudflare Pages with one command
+   555→   555→- ✅ Aris (non-technical) can edit any text on any page using only the documented content workflow
+   556→   556→- ✅ Page load <2s on mobile 3G simulated
+   557→   557→- ✅ Lighthouse mobile score ≥90 (Performance, Accessibility, Best Practices, SEO)
+   558→   558→
+   559→   559→---
+   560→   560→
+   561→   561→END OF MASTER PROMPT

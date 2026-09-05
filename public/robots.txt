@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Aegis Soil Health — aegissoilhealth.com
+Sitemap: https://aegissoilhealth.com/sitemap.xml
