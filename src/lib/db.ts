@@ -16,8 +16,12 @@ let localPrisma: any = null
 
 async function getPrisma() {
   if (!localPrisma) {
-    const { PrismaClient } = await import('@prisma/client')
-    localPrisma = new PrismaClient()
+    try {
+      const { PrismaClient } = await import('@prisma/client')
+      localPrisma = new PrismaClient()
+    } catch {
+      localPrisma = null
+    }
   }
   return localPrisma
 }
