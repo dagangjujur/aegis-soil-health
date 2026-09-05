@@ -42,8 +42,31 @@ export function TernakView() {
         </div>
       </section>
 
-      {/* 2. STATUS KONTEN (jujur) */}
+      {/* 2. STATUS KONTEN (jujur) & FOTO LAPANGAN */}
       <Section>
+        {/* Banner Dokumentasi Peternakan & Probiotik */}
+        <div className="mb-8 overflow-hidden rounded-3xl border border-border shadow-lg">
+          <div className="relative h-64 sm:h-80 w-full">
+            <img
+              src="/ternak-unggas.jpg"
+              alt="Aplikasi Probiotik Ternak & Perikanan BIO7 PT Biotek Agro Nusantara"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+            <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 text-white">
+              <span className="inline-block rounded-md bg-leaf px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-white">
+                Probiotik Hayati Pakan & Sanitasi
+              </span>
+              <p className="mt-2 font-display text-xl sm:text-2xl font-bold">
+                Meningkatkan FCR & Menekan Amonia Kandang
+              </p>
+              <p className="text-xs sm:text-sm text-white/80 max-w-2xl">
+                Bakteri asam laktat dan probiotik alami BIO7 mendukung mikrobioma pencernaan ternak serta dekomposisi feses kandang tanpa bau menyengat.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <GuidanceNote>{tn.honest.body[lang]}</GuidanceNote>
         <div className="mt-6">
           <CertBadgePair />

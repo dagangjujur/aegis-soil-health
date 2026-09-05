@@ -106,13 +106,13 @@ export const padi = {
   },
   pricing: {
     title: { id: "Harga BIO7", en: "BIO7 pricing" } as Locale,
-    dropship: {
-      id: "Pengiriman dari produsen per pesanan (dropship) — pemesanan & konsultasi via WhatsApp.",
-      en: "Sourced per-order from the manufacturer (dropship) — ordering & consultation via WhatsApp.",
+    directShipment: {
+      id: "Pengiriman langsung dari fasilitas produksi PT Biotek Agro Nusantara — pemesanan & konsultasi via WhatsApp.",
+      en: "Direct shipment from PT Biotek Agro Nusantara production facilities — ordering & consultation via WhatsApp.",
     } as Locale,
     oem: {
-      id: "OEM / white-label & skala ekspor: hubungi kami untuk penawaran khusus.",
-      en: "OEM / white-label & export scale: contact us for a special arrangement.",
+      id: "OEM / white-label & skala ekspor: hubungi kami untuk kerja sama resmi produsen.",
+      en: "OEM / white-label & export scale: contact us for direct manufacturer partnership.",
     } as Locale,
   },
   faq: {

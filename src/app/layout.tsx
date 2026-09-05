@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Fraunces, Plus_Jakarta_Sans, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { FloatingWhatsApp } from "@/components/site/floating-whatsapp";
+import { LanguageProvider } from "@/components/site/language-context";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -41,9 +43,9 @@ export const metadata: Metadata = {
     "probiotik ternak",
     "pupuk sawit",
   ],
-  authors: [{ name: "PT Aegis Soil Health" }],
-  creator: "PT Aegis Soil Health",
-  publisher: "PT Aegis Soil Health",
+  authors: [{ name: "PT Biotek Agro Nusantara" }],
+  creator: "PT Biotek Agro Nusantara",
+  publisher: "PT Biotek Agro Nusantara",
   alternates: {
     canonical: "/",
     languages: {
@@ -71,12 +73,21 @@ export const metadata: Metadata = {
     title: "Aegis Soil Health — BIO7 Bioaktivator Mikroba Multiguna",
     description:
       "Mikroba untuk Tanah yang Lebih Hidup. Konsorsium mikroba hidup ultra-padat: mengurai residu agrokimia, menetralkan tanah asam, mengaktifkan biologi tanah.",
+    images: [
+      {
+        url: "/bio7-product.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Kemasan Resmi BIO7 Bioaktivator Mikroba 1L - PT Biotek Agro Nusantara",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aegis Soil Health — BIO7",
     description:
       "Bioaktivator & bioremediasi tanah multi-mikroba. Terdaftar KEMENTAN RI, diuji UNPAD, 20+ tahun di pasar.",
+    images: ["/bio7-product.jpg"],
   },
   category: "agriculture",
 };
@@ -93,12 +104,43 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "PT Biotek Agro Nusantara",
+    alternateName: "Aegis Soil Health",
+    url: "https://aegissoilhealth.com",
+    logo: "https://aegissoilhealth.com/favicon.ico",
+    description:
+      "Formulator dan produsen mandiri bioaktivator konsorsium mikroba tanah BIO7. Terdaftar Kementerian Pertanian RI dan diuji laboratorium UNPAD.",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Bandung",
+      addressRegion: "Jawa Barat",
+      addressCountry: "ID",
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+62-852-2121-2223",
+      contactType: "customer service",
+      areaServed: "ID",
+      availableLanguage: ["Indonesian", "English"],
+    },
+  };
+
   return (
     <html lang="id" suppressHydrationWarning>
       <body
         className={`${fraunces.variable} ${jakarta.variable} ${geistMono.variable} font-sans antialiased bg-background text-foreground`}
       >
-        {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <LanguageProvider>
+          {children}
+          <FloatingWhatsApp />
+        </LanguageProvider>
         <Toaster />
       </body>
     </html>

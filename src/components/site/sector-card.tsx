@@ -37,7 +37,7 @@ export function SectorCard({
 
   return (
     <a
-      href={`#${SECTOR_ROUTES[key]}`}
+      href={SECTOR_ROUTES[key]}
       className={cn(
         "group relative flex min-h-44 w-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-6 text-left shadow-sm transition-all duration-200",
         "hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/10",

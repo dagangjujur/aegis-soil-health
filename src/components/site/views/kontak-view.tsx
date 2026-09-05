@@ -95,6 +95,26 @@ export function KontakView() {
         <div className="grid gap-10 lg:grid-cols-5">
           {/* KANAL KONTAK */}
           <div className="space-y-4 lg:col-span-2">
+            {/* Foto Fasilitas Bandung */}
+            <div className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm">
+              <div className="relative h-44 w-full">
+                <img
+                  src="/hero-biotek.jpg"
+                  alt="Pusat Formulasi dan Laboratorium PT Biotek Agro Nusantara Bandung"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                <div className="absolute bottom-3 left-3 right-3 text-white">
+                  <p className="text-xs font-bold uppercase tracking-wider text-primary-foreground/90">
+                    Fasilitas Terpadu
+                  </p>
+                  <p className="font-display text-sm font-bold text-white">
+                    PT Biotek Agro Nusantara — Bandung
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <a
               href={waLink(WA_MESSAGES[lang].general)}
               target="_blank"

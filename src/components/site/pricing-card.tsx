@@ -57,8 +57,8 @@ export function PricingCard({
         <p className="flex items-start gap-2 text-xs leading-relaxed text-muted-foreground">
           <Factory className="mt-0.5 h-3.5 w-3.5 shrink-0 text-primary" aria-hidden="true" />
           {lang === "id"
-            ? "Model dropship: produk dikirim langsung dari produsen (PT Biotek Agro Nusantara, Bandung) per pesanan."
-            : "Dropship model: products ship directly from the manufacturer (PT Biotek Agro Nusantara, Bandung) per order."}
+            ? "Produk original dikirim langsung dari fasilitas kultur & manufaktur terpadu PT Biotek Agro Nusantara, Bandung."
+            : "Original products ship directly from PT Biotek Agro Nusantara's integrated culture & manufacturing facility, Bandung."}
         </p>
         <WhatsAppCTA
           message={WA_MESSAGES[lang][waContext]}

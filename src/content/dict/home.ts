@@ -14,7 +14,7 @@ export const home = {
     } as Locale,
   },
   hero: {
-    eyebrow: { id: "PT Aegis Soil Health mempersembahkan", en: "PT Aegis Soil Health presents" } as Locale,
+    eyebrow: { id: "PT Biotek Agro Nusantara mempersembahkan", en: "PT Biotek Agro Nusantara presents" } as Locale,
     title: { id: "BIO7", en: "BIO7" } as Locale,
     subtitle: {
       id: "Bioaktivator & Bioremediasi Tanah Multi-Mikroba",

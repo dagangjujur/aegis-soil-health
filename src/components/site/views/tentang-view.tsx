@@ -34,6 +34,29 @@ export function TentangView() {
 
       {/* MISI */}
       <Section>
+        {/* Banner Fasilitas Riset */}
+        <div className="mb-10 overflow-hidden rounded-3xl border border-border shadow-lg">
+          <div className="relative h-64 sm:h-80 w-full">
+            <img
+              src="/hero-biotek.jpg"
+              alt="Fasilitas Riset Kultur Mikroba Tanah PT Biotek Agro Nusantara Bandung"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+            <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 text-white">
+              <span className="inline-block rounded-md bg-primary px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-white">
+                Fasilitas Terpadu Bandung
+              </span>
+              <p className="mt-2 font-display text-xl sm:text-2xl font-bold">
+                Dedikasi 20+ Tahun Kultur Mikroba & Formulasi Bioteknologi Tanah
+              </p>
+              <p className="text-xs sm:text-sm text-white/80">
+                Pusat pengujian laboratorium in-house dan fasilitas manufaktur mandiri PT Biotek Agro Nusantara.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="grid gap-6 lg:grid-cols-2">
           <div className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8">
             <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-terra/10 text-terra" aria-hidden="true">

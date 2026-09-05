@@ -41,8 +41,31 @@ export function KebunView() {
         </div>
       </section>
 
-      {/* 2. STATUS KONTEN (jujur) */}
+      {/* 2. STATUS KONTEN (jujur) & FOTO LAPANGAN */}
       <Section>
+        {/* Banner Dokumentasi Kebun Hortikultura */}
+        <div className="mb-8 overflow-hidden rounded-3xl border border-border shadow-lg">
+          <div className="relative h-64 sm:h-80 w-full">
+            <img
+              src="/kebun-hortikultura.jpg"
+              alt="Perkebunan dan Lahan Hortikultura Jawa Barat dengan Aplikasi BIO7"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+            <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 text-white">
+              <span className="inline-block rounded-md bg-terra px-2.5 py-1 text-xs font-bold uppercase tracking-wider">
+                Aplikasi Hortikultura & Perkebunan
+              </span>
+              <p className="mt-2 font-display text-xl sm:text-2xl font-bold">
+                Akselerasi Kesuburan Tanah & Daya Serap Hara Tanaman
+              </p>
+              <p className="text-xs sm:text-sm text-white/80 max-w-2xl">
+                Formulasi konsorsium 7 strain mikroba aktif PT Biotek Agro Nusantara bekerja menggemburkan tanah padat dan mempercepat dekomposisi bahan organik.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <GuidanceNote>{kb.honest.body[lang]}</GuidanceNote>
         <div className="mt-6">
           <CertBadgePair />

@@ -7,10 +7,10 @@ import type { Locale } from "../lang";
 
 export const tentang = {
   meta: {
-    title: { id: "Tentang PT Aegis Soil Health | BIO7", en: "About PT Aegis Soil Health | BIO7" } as Locale,
+    title: { id: "Tentang PT Biotek Agro Nusantara | BIO7", en: "About PT Biotek Agro Nusantara | BIO7" } as Locale,
     description: {
-      id: "Misi kami: membebaskan tanah pertanian dari toksisitas kimia. Konsorsium multi-mikroba, terdaftar KEMENTAN RI, dianalisis UNPAD, diproduksi PT Biotek Agro Nusantara Bandung.",
-      en: "Our mission: liberating agricultural soils from chemical toxicity. Multi-microbial consortium, KEMENTAN RI registered, UNPAD analyzed, produced by PT Biotek Agro Nusantara Bandung.",
+      id: "Misi kami: membebaskan tanah pertanian dari toksisitas kimia. Konsorsium multi-mikroba in-house, terdaftar KEMENTAN RI, dianalisis UNPAD, diproduksi dan didistribusikan langsung oleh PT Biotek Agro Nusantara Bandung.",
+      en: "Our mission: liberating agricultural soils from chemical toxicity. In-house multi-microbial consortium, KEMENTAN RI registered, UNPAD analyzed, produced and distributed directly by PT Biotek Agro Nusantara Bandung.",
     } as Locale,
   },
   hero: {
@@ -20,68 +20,68 @@ export const tentang = {
       en: "Liberating Agricultural Soils from Chemical Toxicity",
     } as Locale,
     lead: {
-      id: "PT Aegis Soil Health memasarkan BIO7 — bioaktivator multi-mikroba dari PT Biotek Agro Nusantara, Bandung — dengan satu misi: mengembalikan tanah Indonesia ke kondisi biologi yang hidup.",
-      en: "PT Aegis Soil Health markets BIO7 — a multi-microbial bioactivator from PT Biotek Agro Nusantara, Bandung — with one mission: returning Indonesian soil to a living biological condition.",
+      id: "PT Biotek Agro Nusantara memproduksi dan mendistribusikan BIO7 — bioaktivator multi-mikroba berbasis riset kultur mikroba terpadu di Bandung — dengan satu komitmen: mengembalikan tanah Indonesia ke kondisi biologis yang hidup dan produktif.",
+      en: "PT Biotek Agro Nusantara produces and distributes BIO7 — a multi-microbial bioactivator backed by integrated microbial culture research in Bandung — with one commitment: restoring Indonesian soils to a living, productive biological state.",
     } as Locale,
   },
   mission: {
     title: { id: "Misi", en: "Mission" } as Locale,
     body: {
-      id: "Dekade pemupukan dan penyemprotan kimia meninggalkan residu di tanah pertanian Indonesia: keasaman naik, mikroba asli mati, dan hasil stagnan. Misi kami sederhana — mengurai residu beracun, menetralkan keasaman, dan mengaktifkan kembali mikroba bawah tanah. Bukan sekadar memupuk, tapi memulihkan.",
-      en: "Decades of chemical fertilization and spraying left residues in Indonesian farmland: rising acidity, dead native microbes, and stagnant yields. Our mission is simple — decompose toxic residues, neutralize acidity, and reactivate subterranean microbes. Not merely fertilizing, but restoring.",
+      id: "Dekade pemupukan dan penyemprotan kimia meninggalkan residu di tanah pertanian Indonesia: keasaman naik, mikroba asli mati, dan hasil stagnan. Misi kami sederhana — mengurai residu beracun, menetralkan keasaman, dan mengaktifkan kembali mikroba bawah tanah. Bukan sekadar memupuk, tapi memulihkan ekosistem tanah secara menyeluruh.",
+      en: "Decades of chemical fertilization and spraying left residues in Indonesian farmland: rising acidity, dead native microbes, and stagnant yields. Our mission is simple — decompose toxic residues, neutralize acidity, and reactivate subterranean microbes. Not merely fertilizing, but restoring the soil ecosystem entirely.",
     } as Locale,
   },
   consortium: {
     title: { id: "Keunggulan konsorsium vs. inokulan galur tunggal", en: "The consortium advantage vs. single-strain inoculants" } as Locale,
     body: {
-      id: "Sebagian besar produk hayati di pasar memakai satu atau dua galur mikroba — satu fungsi, satu titik kegagalan. BIO7 membawa enam kelompok mikroba sekaligus: penambat nitrogen, pelarut fosfat, dekomposer, dan penekan patogen yang saling menguatkan. Jika satu kelompok tertahan kondisi lapangan, kelompok lain tetap bekerja. Ditambah fitohormon alami (auksin, giberelin, sitokinin) dan poli-elektrolit humat-fulvat yang dihasilkan selama proses produksi.",
-      en: "Most biological products on the market carry one or two microbial strains — one function, one point of failure. BIO7 carries six microbial groups at once: nitrogen fixers, phosphate solubilizers, decomposers, and pathogen suppressors that reinforce each other. If one group is held back by field conditions, the others keep working. Plus natural phytohormones (auxin, gibberellin, cytokinin) and humic-fulvic polyelectrolytes produced during manufacturing.",
+      id: "Sebagian besar produk hayati di pasar memakai satu atau dua galur mikroba — satu fungsi, satu titik kegagalan. BIO7 dikembangkan PT Biotek Agro Nusantara dengan enam kelompok mikroba sekaligus: penambat nitrogen, pelarut fosfat, dekomposer, dan penekan patogen yang saling menguatkan. Jika satu kelompok tertahan kondisi lapangan, kelompok lain tetap bekerja. Ditambah fitohormon alami (auksin, giberelin, sitokinin) dan poli-elektrolit humat-fulvat yang dihasilkan selama proses formulasi mandiri kami.",
+      en: "Most biological products on the market carry one or two microbial strains — one function, one point of failure. BIO7 is developed by PT Biotek Agro Nusantara with six microbial groups simultaneously: nitrogen fixers, phosphate solubilizers, decomposers, and pathogen suppressors that reinforce each other. If one group is held back by field conditions, the others keep working. Plus natural phytohormones (auxin, gibberellin, cytokinin) and humic-fulvic polyelectrolytes synthesized during our in-house formulation process.",
     } as Locale,
   },
   history: {
-    title: { id: "20+ tahun di pasar, baru dipasarkan profesional", en: "20+ years in market, newly professionally marketed" } as Locale,
+    title: { id: "20+ tahun dedikasi kultur mikroba tanah", en: "20+ years of dedicated soil microbial culture" } as Locale,
     body: {
-      id: "BIO7 diproduksi PT Biotek Agro Nusantara di Bandung dan telah beredar lebih dari 20 tahun — bertahan lewat mulut-ke-mulut petani, tanpa pemasaran profesional. PT Aegis Soil Health kini membawa standar pemasaran modern: data lab terbuka, protokol dosis yang jelas, dan satu kanal konsultasi langsung.",
-      en: "BIO7 is produced by PT Biotek Agro Nusantara in Bandung and has circulated for over 20 years — surviving on farmer word-of-mouth, without professional marketing. PT Aegis Soil Health now brings modern marketing standards: open lab data, clear dosage protocols, and a single direct consultation channel.",
+      id: "Sebagai formulator dan produsen langsung, PT Biotek Agro Nusantara telah mendedikasikan lebih dari dua dekade untuk penelitian dan pengembangan bioteknologi tanah di Bandung. Kini melalui platform Aegis Soil Health, kami menghadirkan transparansi pengujian laboratorium, protokol dosis presisi, dan pendampingan agronomi langsung kepada petani dan pelaku usaha agribisnis.",
+      en: "As direct formulator and manufacturer, PT Biotek Agro Nusantara has dedicated more than two decades to soil biotechnology R&D in Bandung. Now through the Aegis Soil Health platform, we bring open lab testing transparency, precision dosage protocols, and direct agronomic guidance to farmers and agribusiness practitioners.",
     } as Locale,
   },
   producer: {
-    title: { id: "Produsen", en: "Producer" } as Locale,
+    title: { id: "Fasilitas & Kapasitas Produksi", en: "Production Facilities & Capacity" } as Locale,
     body: {
-      id: "PT Biotek Agro Nusantara, Bandung — produsen BIO7 dengan pengalaman kultur mikroba lebih dari dua dekade.",
-      en: "PT Biotek Agro Nusantara, Bandung — BIO7's producer with more than two decades of microbial culture experience.",
+      id: "Fasilitas laboratorium kultur dan manufaktur terpadu PT Biotek Agro Nusantara di Bandung memastikan setiap tetes BIO7 memiliki kepadatan mikroba aktif terstandarisasi dengan kontrol mutu ketat dan kapasitas pasokan yang terjamin.",
+      en: "PT Biotek Agro Nusantara's integrated culture and manufacturing facility in Bandung ensures every drop of BIO7 maintains standardized active microbial density with strict quality control and guaranteed supply capacity.",
     } as Locale,
   },
   certs: {
     title: { id: "Sertifikasi & legalitas", en: "Certifications & legality" } as Locale,
     body: {
-      id: "Terdaftar Kementerian Pertanian RI (No. 03.02.2026.156) · Certificate of Analysis dari Fakultas Pertanian Universitas Padjadjaran (No. B-0529/12/2025, 15 Januari 2026) · diuji non-patogenik, E. coli & Salmonella negatif · masa simpan dijamin sampai Juli 2032.",
-      en: "Registered with the Ministry of Agriculture of the Republic of Indonesia (No. 03.02.2026.156) · Certificate of Analysis from the Faculty of Agriculture, Universitas Padjadjaran (No. B-0529/12/2025, 15 January 2026) · tested non-pathogenic, E. coli & Salmonella negative · shelf life guaranteed through July 2032.",
+      id: "Terdaftar resmi Kementerian Pertanian RI (No. 03.02.2026.156) · Certificate of Analysis dari Fakultas Pertanian Universitas Padjadjaran (No. B-0529/12/2025, 15 Januari 2026) · diuji non-patogenik, E. coli & Salmonella negatif · masa simpan dijamin sampai Juli 2032.",
+      en: "Officially registered with the Ministry of Agriculture of the Republic of Indonesia (No. 03.02.2026.156) · Certificate of Analysis from the Faculty of Agriculture, Universitas Padjadjaran (No. B-0529/12/2025, 15 January 2026) · tested non-pathogenic, E. coli & Salmonella negative · shelf life guaranteed through July 2032.",
     } as Locale,
   },
   team: {
-    title: { id: "Satu orang, satu kanal", en: "One person, one channel" } as Locale,
+    title: { id: "Layanan & Konsultasi Langsung", en: "Direct Consultation & Service" } as Locale,
     body: {
-      id: "Aris Setiadi adalah pemasar eksklusif BIO7 — satu-satunya titik kontak untuk semua pembeli, dari petani sampai pembeli B2B dan OEM. Semua transaksi dan konsultasi lewat satu kanal WhatsApp.",
-      en: "Aris Setiadi is BIO7's exclusive marketer — the single point of contact for all buyers, from farmers to B2B and OEM. All transactions and consultations run through one WhatsApp channel.",
+      id: "Tim agronomi PT Biotek Agro Nusantara siap mendampingi kebutuhan Anda, mulai dari petani skala kecil, gabungan kelompok tani (gapoktan), perkebunan komersial, hingga kebutuhan industri pengadaan.",
+      en: "The agronomic team at PT Biotek Agro Nusantara is ready to assist your needs, ranging from smallholder farmers, farmer cooperatives, commercial plantations, to industrial procurement demands.",
     } as Locale,
   },
   oem: {
     title: { id: "Kerja sama OEM / white-label & ekspor", en: "OEM / white-label & export partnership" } as Locale,
     body: {
-      id: "Untuk skala ekspor dan penjualan kembali dengan merek Anda sendiri, tersedia skema khusus dengan fleksibilitas harga di atas HET. Hubungi kami untuk diskusi.",
-      en: "For export scale and resale under your own brand, a special arrangement is available with pricing flexibility above HET. Contact us to discuss.",
+      id: "Sebagai produsen langsung dengan fasilitas kultur in-house, kami melayani kerja sama formulasi kustom, pengemasan OEM/white-label, serta pasokan skala ekspor. Hubungi kami untuk diskusi teknis dan kemitraan.",
+      en: "As a direct manufacturer with in-house culture facilities, we provide custom formulation partnerships, OEM/white-label packaging, and export-scale supplies. Contact us for technical discussion and partnership.",
     } as Locale,
-    cta: { id: "Diskusi OEM via WhatsApp", en: "Discuss OEM via WhatsApp" } as Locale,
+    cta: { id: "Diskusi Kemitraan via WhatsApp", en: "Discuss Partnership via WhatsApp" } as Locale,
   },
 } as const;
 
 export const kontak = {
   meta: {
-    title: { id: "Kontak — Aegis Soil Health", en: "Contact — Aegis Soil Health" } as Locale,
+    title: { id: "Kontak — PT Biotek Agro Nusantara", en: "Contact — PT Biotek Agro Nusantara" } as Locale,
     description: {
-      id: "Hubungi PT Aegis Soil Health: WhatsApp (+62) 852 2121 2223, email, marketplace Shopee/Tokopedia/Lazada. Senin–Sabtu 07.30–17.30 WIB.",
-      en: "Contact PT Aegis Soil Health: WhatsApp (+62) 852 2121 2223, email, Shopee/Tokopedia/Lazada marketplaces. Monday–Saturday 07:30–17:30 WIB.",
+      id: "Hubungi PT Biotek Agro Nusantara: WhatsApp (+62) 852 2121 2223, email, marketplace Shopee/Tokopedia/Lazada. Senin–Sabtu 07.30–17.30 WIB.",
+      en: "Contact PT Biotek Agro Nusantara: WhatsApp (+62) 852 2121 2223, email, Shopee/Tokopedia/Lazada marketplaces. Monday–Saturday 07:30–17:30 WIB.",
     } as Locale,
   },
   hero: {
@@ -137,34 +137,33 @@ export const kontak = {
 
 export const blog = {
   meta: {
-    title: { id: "Blog & Edukasi — Aegis Soil Health", en: "Blog & Education — Aegis Soil Health" } as Locale,
+    title: { id: "Pusat Artikel & Edukasi Agronomi — PT Biotek Agro Nusantara", en: "Agronomic Articles & Education — PT Biotek Agro Nusantara" } as Locale,
     description: {
-      id: "Artikel edukasi seputar tanah, mikroba, dan protokol BIO7 — akan segera hadir.",
-      en: "Educational articles on soil, microbes, and BIO7 protocols — coming soon.",
+      id: "Kumpulan artikel edukasi ilmiah, protokol pemupukan berimbang, dan panduan biologi tanah dari tim riset & agronomi PT Biotek Agro Nusantara.",
+      en: "Collection of scientific education articles, balanced fertilization protocols, and soil biology guides from PT Biotek Agro Nusantara agronomy team.",
     } as Locale,
   },
   hero: {
-    eyebrow: { id: "Blog & Edukasi", en: "Blog & Education" } as Locale,
-    title: { id: "Belajar dari Lapangan & Lab", en: "Learning from Field & Lab" } as Locale,
+    eyebrow: { id: "Publikasi Agronomi & Edukasi", en: "Agronomy Publications & Education" } as Locale,
+    title: { id: "Wawasan Lapangan & Riset Biologi Tanah", en: "Field Insights & Soil Biology Research" } as Locale,
     lead: {
-      id: "Artikel mendalam soal tanah, mikroba, dan dosis — sedang disiapkan. Daftar topik pertama:",
-      en: "In-depth articles on soil, microbes, and dosage — in preparation. First topic list:",
+      id: "Panduan teknis, riset mikroba tanah, dan protokol dosis presisi yang disusun langsung oleh tim teknis PT Biotek Agro Nusantara untuk mendampingi petani dan praktisi agribisnis.",
+      en: "Technical guides, soil microbe research, and precision dosage protocols compiled directly by the PT Biotek Agro Nusantara technical team.",
     } as Locale,
     empty: {
-      id: "Belum ada artikel yang terbit. Artikel pertama menyusul — fokus awal: sektor padi.",
-      en: "No articles published yet. The first articles are coming — initial focus: the rice sector.",
+      id: "Artikel sedang diperbarui. Silakan kembali beberapa saat lagi atau hubungi kami untuk konsultasi langsung.",
+      en: "Articles are being updated. Please check back shortly or contact us for direct consultation.",
     } as Locale,
   },
   topics: {
-    title: { id: "Topik yang akan hadir", en: "Upcoming topics" } as Locale,
+    title: { id: "Fokus Bahasan & Riset Lanjutan", en: "Research Focus & Knowledge Base" } as Locale,
     items: [
-      "Cara atasi tanah asam pada padi",
-      "Mengapa urea dilarang setelah 30 HST",
-      "Jarak aman BIO7 dengan herbisida",
-      "Ciri-ciri tanah sehat vs tanah rusak kimia",
-      "Cara perbanyak anakan padi secara alami",
-      "Pupuk hayati untuk sawit: apa yang perlu diketahui",
-      "Probiotik untuk ayam broiler: cara kerja dan dosis",
+      "Bioremediasi residu pestisida & kimia anorganik di lahan sawah",
+      "Peran silika bioaktif dan mikroba kitinolitik menekan sundep & rebah",
+      "Manajemen mikroba rizosfer pada tanah masam masif",
+      "Peningkatan serapan pupuk NPK makro lewat konsorsium pelarut fosfat",
+      "Strategi probiotik peternakan tanpa ketergantungan antibiotik (AGP)",
+      "Protokol hortikultura cabai & tomat berbasis keseimbangan biologis",
     ],
   },
 } as const;

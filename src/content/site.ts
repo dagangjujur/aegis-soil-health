@@ -8,7 +8,7 @@
  */
 
 export const SITE = {
-  company: "PT Aegis Soil Health",
+  company: "PT Biotek Agro Nusantara",
   product: "BIO7",
   domain: "https://aegissoilhealth.com",
 
@@ -28,7 +28,7 @@ export const SITE = {
     en: "Monday–Saturday, 07:30–17:30 WIB (UTC+7)",
   },
 
-  /** Harga Eceran Tertinggi (HET) — ditetapkan produsen, TIDAK bisa dinegosiasi */
+  /** Harga Eceran Tertinggi (HET) — standar resmi langsung dari PT Biotek Agro Nusantara */
   pricing: {
     java: { nominal: 55000, display: "Rp55.000" },
     outsideJava: { nominal: 65000, display: "Rp65.000" },
@@ -54,13 +54,13 @@ export const SITE = {
     shelfLife: { id: "Masa simpan dijamin sampai Juli 2032", en: "Shelf life guaranteed through July 2032" },
   },
 
-  /** Produsen */
+  /** Fasilitas Produksi & Formulasi Mandiri */
   producer: {
     name: "PT Biotek Agro Nusantara",
     location: { id: "Bandung, Jawa Barat", en: "Bandung, West Java" },
     history: {
-      id: "Lebih dari 20 tahun beredar di pasar tanpa pemasaran profesional",
-      en: "In the market for 20+ years without professional marketing",
+      id: "Lebih dari 20 tahun riset kultur mikroba dan formulasi bioteknologi in-house terpadu",
+      en: "Over 20 years of in-house microbial culture research and integrated biotechnology formulation",
     },
   },
 

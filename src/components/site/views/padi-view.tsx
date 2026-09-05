@@ -77,11 +77,31 @@ function ProductJsonLd() {
       },
     ],
   };
+
+  const faqData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: pd.faq.items.map((item) => ({
+      "@type": "Question",
+      name: item.q.id,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a.id,
+      },
+    })),
+  };
+
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
+      />
+    </>
   );
 }
 
@@ -320,6 +340,30 @@ export function PadiView() {
       {/* 8. BUKTI LAPANGAN */}
       <Section>
         <SectionHeading title={pd.fieldProof.title} id="bukti" />
+        
+        {/* Banner Dokumentasi Panen Karawang */}
+        <div className="mb-6 overflow-hidden rounded-3xl border border-border shadow-lg">
+          <div className="relative h-64 sm:h-80 w-full">
+            <img
+              src="/panen-karawang.jpg"
+              alt="Dokumentasi Panen Padi Karawang 12,6 Ton per Hektar BIO7"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+            <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 text-white">
+              <span className="inline-block rounded-md bg-terra px-2.5 py-1 text-xs font-bold uppercase tracking-wider">
+                Kasus Lapangan Terverifikasi
+              </span>
+              <p className="mt-2 font-display text-xl sm:text-2xl font-bold">
+                12,6 Ton Gabah Kering Panen per Hektar di Karawang
+              </p>
+              <p className="text-xs sm:text-sm text-white/80">
+                Peningkatan hasil +61,5% dengan pengurangan pupuk kimia NPK sintetis sebesar 40%.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="grid gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm sm:grid-cols-2 lg:grid-cols-3 lg:p-8">
           <div className="sm:col-span-2 lg:col-span-3">
             <p className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
@@ -360,7 +404,7 @@ export function PadiView() {
         <div className="grid items-start gap-8 lg:grid-cols-2">
           <div>
             <SectionHeading title={pd.pricing.title} />
-            <p className="text-sm leading-relaxed text-muted-foreground">{pd.pricing.dropship[lang]}</p>
+            <p className="text-sm leading-relaxed text-muted-foreground">{pd.pricing.directShipment[lang]}</p>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{pd.pricing.oem[lang]}</p>
             <div className="mt-6">
               <WhatsAppCTA message={WA_MESSAGES[lang].padi} label={common.cta.order[lang]} size="lg" />

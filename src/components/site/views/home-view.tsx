@@ -10,6 +10,7 @@ import { ShieldCheck, FlaskConical, Clock3 } from "lucide-react";
 import { Bio7Wordmark } from "../logo";
 import { SectorCard } from "../sector-card";
 import { WhatsAppCTA } from "../whatsapp-cta";
+import { PartnerShowcase } from "../partner-showcase";
 import { home, WA_MESSAGES, SITE } from "@/content";
 import { useLanguage } from "../language-context";
 
@@ -43,7 +44,32 @@ export function HomeView() {
             {home.hero.valueProp[lang]}
           </h1>
 
-          <p className="mt-6 text-sm font-semibold text-primary">
+          {/* Visual Botol BIO7 & Fasilitas Riset */}
+          <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 max-w-3xl w-full">
+            <div className="relative h-64 w-64 sm:h-72 sm:w-72 shrink-0 overflow-hidden rounded-3xl border-2 border-primary/20 shadow-xl">
+              <img
+                src="/bio7-product.jpg"
+                alt="Botol 1 Liter BIO7 Bioaktivator Mikroba Tanah"
+                className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+              <span className="absolute bottom-3 inset-x-3 rounded-xl bg-background/90 backdrop-blur-xs py-1.5 px-3 text-center text-[11px] font-bold text-primary shadow-xs">
+                Kemasan 1 Liter Resmi KEMENTAN RI
+              </span>
+            </div>
+
+            <div className="relative h-64 sm:h-72 w-full grow overflow-hidden rounded-3xl border-2 border-primary/20 shadow-xl hidden sm:block">
+              <img
+                src="/hero-biotek.jpg"
+                alt="Laboratorium Kultur Mikroba PT Biotek Agro Nusantara & Sawah Subur"
+                className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+              <span className="absolute bottom-3 inset-x-3 rounded-xl bg-background/90 backdrop-blur-xs py-1.5 px-3 text-center text-[11px] font-bold text-foreground shadow-xs">
+                Fasilitas Riset Kultur & Manufaktur Terpadu Bandung
+              </span>
+            </div>
+          </div>
+
+          <p className="mt-8 text-sm font-semibold text-primary">
             {home.hero.question[lang]}
           </p>
 
@@ -85,6 +111,9 @@ export function HomeView() {
           </ul>
         </div>
       </section>
+
+      {/* Showcase Partner Resmi */}
+      <PartnerShowcase />
     </>
   );
 }

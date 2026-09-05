@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /admin/
+Disallow: /api/
 
-# Aegis Soil Health — aegissoilhealth.com
+# Official Sitemap — PT Biotek Agro Nusantara
 Sitemap: https://aegissoilhealth.com/sitemap.xml

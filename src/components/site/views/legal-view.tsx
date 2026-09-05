@@ -27,7 +27,7 @@ export function LegalView({ kind }: { kind: LegalKey }) {
   return (
     <Section className="min-h-[60vh]">
       <a
-        href={`#${ROUTES.home}`}
+        href={ROUTES.home}
         className="inline-flex items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline"
       >
         <ArrowLeft className="h-4 w-4" aria-hidden="true" />
@@ -52,17 +52,17 @@ export function LegalView({ kind }: { kind: LegalKey }) {
 
         <nav aria-label="Legal" className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-primary">
           {kind !== "privacy" && (
-            <a href={`#${ROUTES.privacy}`} className="underline-offset-4 hover:underline">
+            <a href={ROUTES.privacy} className="underline-offset-4 hover:underline">
               {legal.privacy.title[lang]}
             </a>
           )}
           {kind !== "terms" && (
-            <a href={`#${ROUTES.terms}`} className="underline-offset-4 hover:underline">
+            <a href={ROUTES.terms} className="underline-offset-4 hover:underline">
               {legal.terms.title[lang]}
             </a>
           )}
           {kind !== "disclaimer" && (
-            <a href={`#${ROUTES.disclaimer}`} className="underline-offset-4 hover:underline">
+            <a href={ROUTES.disclaimer} className="underline-offset-4 hover:underline">
               {legal.disclaimer.title[lang]}
             </a>
           )}
