@@ -52,14 +52,14 @@ export function BrandLockup({
   return (
     <span className={cn("inline-flex items-center gap-2.5", className)}>
       <AegisMark className={compact ? "h-8 w-8" : "h-9 w-9"} />
-      <span className="flex flex-col leading-none">
+      <span className="hidden sm:flex flex-col leading-none">
         <span className="font-display text-lg font-semibold tracking-tight text-primary">
           Aegis Soil Health
         </span>
         <span className="mt-1 inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-[0.22em] text-terra">
           <span aria-hidden="true">BIO7</span>
           <span aria-hidden="true" className="inline-block h-1 w-1 rounded-full bg-terra/60" />
-          <span className="text-muted-foreground/80">Bioaktivator Mikroba</span>
+          <span className="text-muted-foreground/80">PT Biotek Agro</span>
         </span>
       </span>
     </span>

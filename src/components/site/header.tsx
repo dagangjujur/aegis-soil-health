@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X, ChevronRight } from "lucide-react";
-import { BrandLockup, WhatsAppIcon } from "./logo";
+import { BrandLockup, AegisMark, WhatsAppIcon } from "./logo";
 import { LanguageToggle } from "./language-toggle";
 import { SITE, WA_MESSAGES, common, ROUTES, waLink } from "@/content";
 import { useLanguage } from "./language-context";
@@ -87,6 +87,17 @@ export function Header({ route }: { route: string }) {
       {/* Mobile Navigation Drawer Dropdown */}
       {mobileMenuOpen && (
         <div className="md:hidden border-b border-border bg-card/98 px-4 py-5 shadow-xl animate-in slide-in-from-top-2">
+          {/* Header Identitas Resmi di dalam Menu Mobile */}
+          <div className="mb-4 pb-3 border-b border-border/70 flex items-center gap-3 px-2">
+            <AegisMark className="h-8 w-8 shrink-0" />
+            <div className="leading-tight">
+              <p className="font-display text-sm font-bold text-primary">Aegis Soil Health</p>
+              <p className="text-[10px] text-muted-foreground uppercase tracking-wider font-semibold">
+                BIO7 · PT Biotek Agro Nusantara
+              </p>
+            </div>
+          </div>
+
           <nav className="flex flex-col space-y-1">
             {navLinks.map((link) => {
               const isActive = route === link.href;
