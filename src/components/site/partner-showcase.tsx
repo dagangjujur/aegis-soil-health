@@ -19,27 +19,10 @@ interface PartnerItem {
   order: number;
 }
 
-const DEFAULT_PARTNERS: PartnerItem[] = [
-  {
-    id: "p-gapoktan",
-    name: "Gabungan Kelompok Tani (Gapoktan) Sri Makmur Karawang",
-    logoUrl: "/panen-karawang.jpg",
-    websiteUrl: "https://aegissoilhealth.com",
-    order: 1,
-  },
-  {
-    id: "p-biotek",
-    name: "Laboratorium Kultur Tanah Terpadu Bandung",
-    logoUrl: "/hero-biotek.jpg",
-    websiteUrl: "https://aegissoilhealth.com/tentang",
-    order: 2,
-  },
-];
-
 export function PartnerShowcase() {
   const { lang } = useLanguage();
-  const [partners, setPartners] = useState<PartnerItem[]>(DEFAULT_PARTNERS);
-  const [loading, setLoading] = useState(false);
+  const [partners, setPartners] = useState<PartnerItem[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     fetch("/api/partners")
@@ -49,7 +32,8 @@ export function PartnerShowcase() {
           setPartners(data);
         }
       })
-      .catch((err) => console.error("Error loading partners:", err));
+      .catch((err) => console.error("Error loading partners:", err))
+      .finally(() => setLoading(false));
   }, []);
 
   if (!loading && partners.length === 0) {

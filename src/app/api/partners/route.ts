@@ -99,15 +99,7 @@ export async function DELETE(req: Request) {
       return NextResponse.json({ error: 'ID partner diperlukan' }, { status: 400 })
     }
 
-    const existing = await db.partner.findUnique({
-      where: { id },
-    })
-
-    if (!existing) {
-      // Jika sudah tidak ada di DB, anggap berhasil agar UI tidak stuck
-      return NextResponse.json({ success: true, message: 'Partner sudah tidak ada' })
-    }
-
+    // Langsung hapus dari database
     await db.partner.delete({
       where: { id },
     })
