@@ -119,25 +119,49 @@ export function KebunView() {
       <Section tone="paper">
         <SectionHeading title={kb.crops.title} />
 
-        {/* Banner Ilustrasi Sayuran & Hortikultura Sehat */}
-        <div className="mb-8 overflow-hidden rounded-3xl border border-border shadow-md">
-          <div className="relative h-56 sm:h-64 w-full">
-            <img
-              src="/kebun-sayur.jpg"
-              alt="Budidaya Sayuran & Hortikultura Sehat Berbasis Mikroba Tanah Aktif"
-              className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
-            <div className="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-6 sm:right-6 text-white">
-              <span className="inline-block rounded-md bg-leaf px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-white">
-                Nutrisi Organik & Kesegaran Alami
-              </span>
-              <p className="mt-1.5 font-display text-lg sm:text-xl font-bold">
-                Meningkatkan Ketahanan Tanaman Terhadap Cekaman Cuaca & Penyakit Akar
-              </p>
-              <p className="text-xs sm:text-sm text-white/80 max-w-2xl">
-                Konsorsium mikroba BIO7 merangsang perakaran intensif, mempercepat pembesaran buah dan umbi tanpa merusak ekosistem tanah.
-              </p>
+        {/* Banner Ilustrasi Sayuran Hortikultura & Perkebunan Sawit/Kopi */}
+        <div className="mb-8 grid gap-6 md:grid-cols-2">
+          <div className="overflow-hidden rounded-3xl border border-border shadow-md">
+            <div className="relative h-60 w-full">
+              <img
+                src="/kebun-sayur.jpg"
+                alt="Budidaya Sayuran & Hortikultura Sehat Berbasis Mikroba Tanah Aktif"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 text-white">
+                <span className="inline-block rounded-md bg-leaf px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-white">
+                  Sayur & Hortikultura
+                </span>
+                <p className="mt-1.5 font-display text-base sm:text-lg font-bold">
+                  Ketahanan Terhadap Cekaman Cuaca
+                </p>
+                <p className="text-xs text-white/80 line-clamp-2">
+                  Merangsang perakaran intensif, mempercepat pembesaran buah dan umbi alami.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-3xl border border-border shadow-md">
+            <div className="relative h-60 w-full">
+              <img
+                src="/kebun-sawit-kopi.jpg"
+                alt="Perkebunan Kelapa Sawit dan Kopi dengan Aplikasi Bioaktivator Tanah BIO7"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 text-white">
+                <span className="inline-block rounded-md bg-terra px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-white">
+                  Perkebunan Sawit & Kopi
+                </span>
+                <p className="mt-1.5 font-display text-base sm:text-lg font-bold">
+                  Dekomposisi Serasah & Efisiensi Hara
+                </p>
+                <p className="text-xs text-white/80 line-clamp-2">
+                  Mempercepat pelapukan biomassa organik dan mengoptimalkan penyerapan pupuk makro di tanah perkebunan.
+                </p>
+              </div>
             </div>
           </div>
         </div>

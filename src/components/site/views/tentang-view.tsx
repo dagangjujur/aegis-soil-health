@@ -38,8 +38,8 @@ export function TentangView() {
         <div className="mb-10 overflow-hidden rounded-3xl border border-border shadow-lg">
           <div className="relative h-64 sm:h-80 w-full">
             <img
-              src="/hero-biotek.jpg"
-              alt="Fasilitas Riset Kultur Mikroba Tanah PT Biotek Agro Nusantara Bandung"
+              src="/lab-biotek-kultur.jpg"
+              alt="Fasilitas Riset Kultur Mikroba Tanah dan Bioteknologi PT Biotek Agro Nusantara Bandung"
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />

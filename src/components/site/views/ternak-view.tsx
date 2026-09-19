@@ -103,6 +103,30 @@ export function TernakView() {
       {/* 4. DOSIS PER JENIS TERNAK */}
       <Section>
         <SectionHeading title={tn.dosage.title} />
+
+        {/* Banner Ilustrasi Ternak Ruminansia & Akuakultur Kolam Ikan */}
+        <div className="mb-8 overflow-hidden rounded-3xl border border-border shadow-md">
+          <div className="relative h-56 sm:h-64 w-full">
+            <img
+              src="/ternak-ruminansia-ikan.jpg"
+              alt="Aplikasi Probiotik Alami untuk Peternakan Ruminansia dan Budidaya Perikanan Air Tawar"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
+            <div className="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-6 sm:right-6 text-white">
+              <span className="inline-block rounded-md bg-terra px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-white">
+                Ruminansia & Akuakultur
+              </span>
+              <p className="mt-1.5 font-display text-lg sm:text-xl font-bold">
+                Mendukung Kesehatan Pencernaan & Kualitas Air Budidaya
+              </p>
+              <p className="text-xs sm:text-sm text-white/80 max-w-2xl">
+                Fermentasi ransum pakan sapi/kambing mempercepat penyerapan gizi, sementara aplikasi pada kolam menstabilkan mikroflora air dan mengurai endapan lumpur beracun.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div className="grid gap-4 lg:grid-cols-3">
           {tn.dosage.rows.map((row) => (
             <div key={row.type.en} className="overflow-hidden rounded-xl border border-border bg-card shadow-sm">
