@@ -47,7 +47,7 @@ export const home = {
     },
     {
       key: "ternak" as const,
-      title: { id: "Peternakan & Perikanan", en: "Livestock & Aquaculture" } as Locale,
+      title: { id: "Peternakan & Unggas", en: "Livestock & Poultry" } as Locale,
       pitch: {
         id: "Air minum probiotik, fermentasi pakan, dan sanitasi kandang dengan konsorsium mikroba yang sama.",
         en: "Probiotic drinking water, feed fermentation, and barn sanitation with the same microbial consortium.",

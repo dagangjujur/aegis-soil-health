@@ -1,21 +1,21 @@
 import type { Locale } from "../lang";
 
 /**
- * Halaman TERNAK (Peternakan & Perikanan).
+ * Halaman TERNAK (Peternakan & Unggas).
  * Aris: teks narasi halaman ternak ada di sini.
  * PENTING: konten diekstrapolasi — wajib menyimpan label jujur (guidance).
  */
 
 export const ternak = {
   meta: {
-    title: { id: "BIO7 untuk Peternakan & Perikanan | Aegis Soil Health", en: "BIO7 for Livestock & Aquaculture | Aegis Soil Health" } as Locale,
+    title: { id: "BIO7 untuk Peternakan | Aegis Soil Health", en: "BIO7 for Livestock | Aegis Soil Health" } as Locale,
     description: {
-      id: "Petunjuk aplikasi BIO7 untuk ternak: air minum probiotik, fermentasi pakan, dan sanitasi kandang untuk ayam, sapi, kambing, ikan, dan udang.",
-      en: "BIO7 application guidance for livestock: probiotic drinking water, feed fermentation, and barn sanitation for poultry, cattle, goats, fish, and shrimp.",
+      id: "Petunjuk aplikasi BIO7 untuk ternak: air minum probiotik, fermentasi pakan, dan sanitasi kandang untuk ayam, sapi, kambing, dan unggas.",
+      en: "BIO7 application guidance for livestock: probiotic drinking water, feed fermentation, and barn sanitation for poultry, cattle, goats, and livestock.",
     } as Locale,
   },
   hero: {
-    eyebrow: { id: "Sektor Peternakan & Perikanan", en: "Livestock & Aquaculture Sector" } as Locale,
+    eyebrow: { id: "Sektor Peternakan", en: "Livestock Sector" } as Locale,
     title: {
       id: "Satu Konsorsium Mikroba untuk Kandang yang Lebih Sehat",
       en: "One Microbial Consortium for a Healthier Barn",
@@ -63,19 +63,19 @@ export const ternak = {
     title: { id: "Petunjuk dosis per jenis ternak", en: "Dosage guidance per livestock type" } as Locale,
     rows: [
       {
-        type: { id: "Broiler / layer (ayam)", en: "Broiler / layer (poultry)" } as Locale,
+        type: { id: "Broiler / layer (unggas & ayam)", en: "Broiler / layer (poultry & chickens)" } as Locale,
         dosage: { id: "1–2 tutup per liter air minum", en: "1–2 caps per liter of drinking water" } as Locale,
         schedule: { id: "3–5 hari per bulan", en: "3–5 days per month" } as Locale,
       },
       {
-        type: { id: "Ruminan (sapi / kambing)", en: "Ruminants (cattle / goats)" } as Locale,
+        type: { id: "Ruminansia besar (sapi potong & perah)", en: "Large ruminants (beef & dairy cattle)" } as Locale,
         dosage: { id: "5–10 tutup per ekor per hari", en: "5–10 caps per head per day" } as Locale,
         schedule: { id: "Dicampur pakan atau air minum", en: "Mixed into feed or drinking water" } as Locale,
       },
       {
-        type: { id: "Akuakultur (ikan / udang)", en: "Aquaculture (fish / shrimp)" } as Locale,
-        dosage: { id: "1 tutup per 100 m³ air", en: "1 cap per 100 m³ of water" } as Locale,
-        schedule: { id: "Aplikasi mingguan", en: "Weekly application" } as Locale,
+        type: { id: "Ruminansia kecil (kambing & domba)", en: "Small ruminants (goats & sheep)" } as Locale,
+        dosage: { id: "2–3 tutup per ekor per hari", en: "2–3 caps per head per day" } as Locale,
+        schedule: { id: "Dicampur ransum pakan atau air minum", en: "Mixed into feed ration or drinking water" } as Locale,
       },
     ],
     note: {

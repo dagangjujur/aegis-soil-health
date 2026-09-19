@@ -120,7 +120,7 @@ export const kontak = {
     sectors: [
       { value: "padi", label: { id: "Padi / Pertanian", en: "Rice / Agriculture" } as Locale },
       { value: "kebun", label: { id: "Perkebunan / Hortikultura", en: "Plantations / Horticulture" } as Locale },
-      { value: "ternak", label: { id: "Peternakan / Perikanan", en: "Livestock / Aquaculture" } as Locale },
+      { value: "ternak", label: { id: "Peternakan", en: "Livestock" } as Locale },
       { value: "lainnya", label: { id: "Lainnya / OEM / B2B", en: "Other / OEM / B2B" } as Locale },
     ],
     message: { id: "Pesan", en: "Message" } as Locale,
