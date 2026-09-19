@@ -20,19 +20,45 @@ interface PostItem {
   createdAt: string;
 }
 
+const DEFAULT_POSTS: PostItem[] = [
+  {
+    id: "cmto21qkf00059yl17col0hkc",
+    slug: "cara-atasi-tanah-asam-pada-padi",
+    title: "Cara Mengatasi Tanah Asam pada Tanaman Padi",
+    summary: "Panduan teknis bioremediasi tanah masam akibat residu pupuk kimia jangka panjang menggunakan bioaktivator konsorsium mikroba.",
+    category: "Padi & Pertanian",
+    createdAt: "2026-03-01T08:00:00.000Z",
+  },
+  {
+    id: "cmto366cv00009y0fcmt8omk0",
+    slug: "ciri-ciri-tanah-sehat-vs-tanah-rusak-kimia",
+    title: "Ciri-Ciri Tanah Sehat vs Tanah Rusak Akibat Residu Kimia",
+    summary: "Kenali indikator fisik, kimia, dan biologis tanah sawah Anda: membedakan tanah yang masih hidup dengan tanah yang telah mengalami pemadatan dan kejenuhan kimia.",
+    category: "Biologi Tanah",
+    createdAt: "2026-03-02T08:00:00.000Z",
+  },
+  {
+    id: "cmto21qkf00069yl1ngb08opo",
+    slug: "mengapa-urea-dilarang-setelah-30-hst",
+    title: "Mengapa Pemberian Urea Harus Dibatasi Setelah 30 HST?",
+    summary: "Penjelasan fisiologis metabolisme tanaman padi: risiko kelebihan nitrogen setelah 30 HST terhadap serangan sundep, blast, dan rebah batang.",
+    category: "Teknis Budidaya",
+    createdAt: "2026-03-03T08:00:00.000Z",
+  },
+];
+
 export function BlogView() {
   const { lang } = useLanguage();
-  const [posts, setPosts] = useState<PostItem[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [posts, setPosts] = useState<PostItem[]>(DEFAULT_POSTS);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     fetch("/api/posts")
       .then((res) => (res.ok ? res.json() : []))
       .then((data) => {
-        if (Array.isArray(data)) setPosts(data);
+        if (Array.isArray(data) && data.length > 0) setPosts(data);
       })
-      .catch((err) => console.error(err))
-      .finally(() => setLoading(false));
+      .catch((err) => console.error(err));
   }, []);
 
   return (
