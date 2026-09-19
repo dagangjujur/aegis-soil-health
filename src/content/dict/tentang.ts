@@ -161,12 +161,54 @@ export const blog = {
   topics: {
     title: { id: "Fokus Bahasan & Riset Lanjutan", en: "Research Focus & Knowledge Base" } as Locale,
     items: [
-      "Bioremediasi residu pestisida & kimia anorganik di lahan sawah",
-      "Peran silika bioaktif dan mikroba kitinolitik menekan sundep & rebah",
-      "Manajemen mikroba rizosfer pada tanah masam masif",
-      "Peningkatan serapan pupuk NPK makro lewat konsorsium pelarut fosfat",
-      "Strategi probiotik peternakan tanpa ketergantungan antibiotik (AGP)",
-      "Protokol hortikultura cabai & tomat berbasis keseimbangan biologis",
+      {
+        title: {
+          id: "Bioremediasi residu pestisida & kimia anorganik di lahan sawah",
+          en: "Bioremediation of pesticide and chemical residues in paddy soils",
+        } as Locale,
+        slug: "bioremediasi-residu-pestisida-dan-kimia-di-lahan-sawah",
+        category: "Biologi Tanah",
+      },
+      {
+        title: {
+          id: "Peran silika bioaktif dan mikroba kitinolitik menekan sundep & rebah",
+          en: "Role of bioactive silica and chitinolytic microbes against stem borer and lodging",
+        } as Locale,
+        slug: "peran-silika-bioaktif-dan-mikroba-kitinolitik-menekan-sundep-rebah",
+        category: "Perlindungan Tanaman",
+      },
+      {
+        title: {
+          id: "Manajemen mikroba rizosfer pada tanah masam masif",
+          en: "Rhizosphere microbial management in highly acidic soils",
+        } as Locale,
+        slug: "manajemen-mikroba-rizosfer-pada-tanah-masam-masif",
+        category: "Biologi Tanah",
+      },
+      {
+        title: {
+          id: "Peningkatan serapan pupuk NPK makro lewat konsorsium pelarut fosfat",
+          en: "Enhancing NPK fertilizer uptake via phosphate-solubilizing consortium",
+        } as Locale,
+        slug: "peningkatan-serapan-pupuk-npk-makro-lewat-konsorsium-pelarut-fosfat",
+        category: "Teknis Budidaya",
+      },
+      {
+        title: {
+          id: "Strategi probiotik peternakan tanpa ketergantungan antibiotik (AGP)",
+          en: "Livestock probiotic strategies free from antibiotic growth promoters (AGP)",
+        } as Locale,
+        slug: "strategi-probiotik-peternakan-tanpa-ketergantungan-antibiotik-agp",
+        category: "Peternakan",
+      },
+      {
+        title: {
+          id: "Protokol hortikultura cabai & tomat berbasis keseimbangan biologis",
+          en: "Horticulture protocol for chili and tomato based on biological balance",
+        } as Locale,
+        slug: "protokol-hortikultura-cabai-dan-tomat-berbasis-keseimbangan-biologis",
+        category: "Hortikultura",
+      },
     ],
   },
 } as const;

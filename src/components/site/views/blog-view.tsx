@@ -11,6 +11,8 @@ import { Section, SectionHeading } from "../section";
 import { blog as bg } from "@/content";
 import { useLanguage } from "../language-context";
 
+import { ALL_POSTS } from "@/content/posts-data";
+
 interface PostItem {
   id: string;
   slug: string;
@@ -20,32 +22,14 @@ interface PostItem {
   createdAt: string;
 }
 
-const DEFAULT_POSTS: PostItem[] = [
-  {
-    id: "cmto21qkf00059yl17col0hkc",
-    slug: "cara-atasi-tanah-asam-pada-padi",
-    title: "Cara Mengatasi Tanah Asam pada Tanaman Padi",
-    summary: "Panduan teknis bioremediasi tanah masam akibat residu pupuk kimia jangka panjang menggunakan bioaktivator konsorsium mikroba.",
-    category: "Padi & Pertanian",
-    createdAt: "2026-03-01T08:00:00.000Z",
-  },
-  {
-    id: "cmto366cv00009y0fcmt8omk0",
-    slug: "ciri-ciri-tanah-sehat-vs-tanah-rusak-kimia",
-    title: "Ciri-Ciri Tanah Sehat vs Tanah Rusak Akibat Residu Kimia",
-    summary: "Kenali indikator fisik, kimia, dan biologis tanah sawah Anda: membedakan tanah yang masih hidup dengan tanah yang telah mengalami pemadatan dan kejenuhan kimia.",
-    category: "Biologi Tanah",
-    createdAt: "2026-03-02T08:00:00.000Z",
-  },
-  {
-    id: "cmto21qkf00069yl1ngb08opo",
-    slug: "mengapa-urea-dilarang-setelah-30-hst",
-    title: "Mengapa Pemberian Urea Harus Dibatasi Setelah 30 HST?",
-    summary: "Penjelasan fisiologis metabolisme tanaman padi: risiko kelebihan nitrogen setelah 30 HST terhadap serangan sundep, blast, dan rebah batang.",
-    category: "Teknis Budidaya",
-    createdAt: "2026-03-03T08:00:00.000Z",
-  },
-];
+const DEFAULT_POSTS: PostItem[] = ALL_POSTS.map((p) => ({
+  id: p.id,
+  slug: p.slug,
+  title: p.title,
+  summary: p.summary,
+  category: p.category,
+  createdAt: p.createdAt,
+}));
 
 export function BlogView() {
   const { lang } = useLanguage();
@@ -169,17 +153,29 @@ export function BlogView() {
           </div>
         )}
 
-        {/* Topik mendatang dari rencana marketing */}
+        {/* Topik riset lanjutan terhubung langsung ke artikel */}
         <div className="mt-14 border-t border-border/60 pt-10">
           <SectionHeading title={bg.topics.title} />
-          <ul className="grid gap-3 sm:grid-cols-2">
-            {bg.topics.items.map((topic) => (
-              <li
-                key={topic}
-                className="flex items-center gap-3 rounded-xl border border-border bg-card p-4 text-sm text-foreground/90 shadow-xs"
-              >
-                <BookOpenText className="h-4 w-4 shrink-0 text-terra" aria-hidden="true" />
-                {topic}
+          <ul className="grid gap-3.5 sm:grid-cols-2">
+            {bg.topics.items.map((item) => (
+              <li key={item.slug}>
+                <a
+                  href={`/blog/${item.slug}`}
+                  className="group flex items-start gap-3.5 rounded-xl border border-border bg-card p-4 text-sm text-foreground/90 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/50 hover:bg-paper-deep/30"
+                >
+                  <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-terra/10 text-terra transition-colors group-hover:bg-primary/10 group-hover:text-primary">
+                    <BookOpenText className="h-4 w-4" aria-hidden="true" />
+                  </span>
+                  <div className="flex-1">
+                    <span className="inline-block rounded-md bg-muted px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+                      {item.category}
+                    </span>
+                    <p className="mt-1 font-semibold leading-snug text-foreground group-hover:text-primary transition-colors">
+                      {item.title[lang]}
+                    </p>
+                  </div>
+                  <ArrowRight className="mt-2 h-4 w-4 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-primary" />
+                </a>
               </li>
             ))}
           </ul>
