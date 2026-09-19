@@ -32,6 +32,7 @@ export const SITE = {
   pricing: {
     java: { nominal: 55000, display: "Rp55.000" },
     outsideJava: { nominal: 65000, display: "Rp65.000" },
+    international: { nominal: 75000, display: "Rp75.000" },
     unit: { id: "per botol 1 liter", en: "per 1-liter bottle" },
     costBasis: 40000,
   },
@@ -63,13 +64,6 @@ export const SITE = {
       en: "Over 20 years of in-house microbial culture research and integrated biotechnology formulation",
     },
   },
-
-  /** Marketplace resmi */
-  marketplaces: [
-    { name: "Shopee", url: "https://shopee.co.id", query: "BIO7 Aegis Soil Health" },
-    { name: "Tokopedia", url: "https://www.tokopedia.com", query: "BIO7 Aegis Soil Health" },
-    { name: "Lazada", url: "https://www.lazada.co.id", query: "BIO7 Aegis Soil Health" },
-  ],
 
   /** Kasus lapangan terverifikasi — Karawang 2023 */
   fieldCase: {

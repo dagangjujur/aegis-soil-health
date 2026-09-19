@@ -80,12 +80,20 @@ export function TernakView() {
           {tn.applications.items.map((item, i) => {
             const Icon = APP_ICONS[i] ?? Bird;
             return (
-              <div key={item.title.en} className="rounded-xl border border-border bg-card p-5 shadow-sm">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-leaf/10 text-leaf" aria-hidden="true">
-                  <Icon className="h-5.5 w-5.5" />
-                </span>
-                <h3 className="mt-3.5 text-base font-bold text-foreground">{item.title[lang]}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.body[lang]}</p>
+              <div
+                key={item.title.en}
+                className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-leaf/40 hover:shadow-md"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-leaf/10 text-leaf transition-transform duration-300 group-hover:scale-110" aria-hidden="true">
+                    <Icon className="h-6 w-6" />
+                  </span>
+                  <span className="rounded-full bg-paper-deep px-2.5 py-1 text-[11px] font-bold text-leaf font-mono">
+                    0{i + 1}
+                  </span>
+                </div>
+                <h3 className="mt-4 text-base font-bold text-foreground group-hover:text-leaf transition-colors">{item.title[lang]}</h3>
+                <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{item.body[lang]}</p>
               </div>
             );
           })}

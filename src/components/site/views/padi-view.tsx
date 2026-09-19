@@ -75,6 +75,13 @@ function ProductJsonLd() {
         url: "https://aegissoilhealth.com/padi",
         eligibleRegion: "ID",
       },
+      {
+        "@type": "Offer",
+        priceCurrency: "IDR",
+        price: "75000",
+        availability: "https://schema.org/InStock",
+        url: "https://aegissoilhealth.com/padi",
+      },
     ],
   };
 
@@ -239,6 +246,30 @@ export function PadiView() {
       {/* 5. EMPAT PROTOKOL */}
       <Section tone="paper">
         <SectionHeading title={pd.protocols.title} subtitle={pd.protocols.subtitle} id="protokol" />
+
+        {/* Infografis Tahapan Fase Pertumbuhan Sawah */}
+        <div className="mb-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            { step: "A", title: "Vegetatif Awal", time: "7 & 14 HST", desc: "Akar super dalam & anakan produktif" },
+            { step: "B", title: "Vegetatif Lanjut", time: "21 & 28 HST", desc: "Maksimalisasi anakan & dinding sel" },
+            { step: "C", title: "Bunting Kecil", time: "40 & 48 HST", desc: "Inisiasi malai serentak & panjang" },
+            { step: "D", title: "Pengisian Bulir", time: "60 & 70 HST", desc: "Bulir padat, bernas, berbobot penuh" },
+          ].map((phase) => (
+            <div key={phase.step} className="relative overflow-hidden rounded-2xl border border-border bg-card p-4 shadow-xs">
+              <div className="flex items-center justify-between">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/10 font-mono text-sm font-bold text-primary">
+                  {phase.step}
+                </span>
+                <span className="rounded-md bg-paper-deep px-2 py-0.5 text-[10px] font-bold text-terra font-mono">
+                  {phase.time}
+                </span>
+              </div>
+              <p className="mt-3 text-sm font-bold text-foreground">{phase.title}</p>
+              <p className="mt-1 text-xs text-muted-foreground leading-relaxed">{phase.desc}</p>
+            </div>
+          ))}
+        </div>
+
         <div className="grid gap-6 lg:grid-cols-2">
           {PROTOCOLS.map((protocol) => (
             <ProtocolBlock key={protocol.key} protocol={protocol} />

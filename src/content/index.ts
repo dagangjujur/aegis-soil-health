@@ -3,7 +3,7 @@
  * PUSAT KONTEN — semua teks situs dikumpulkan di sini
  * ============================================================
  * Struktur file konten:
- *   site.ts      → kontak, harga, sertifikasi, marketplace (data)
+ *   site.ts      → kontak, harga, sertifikasi, data perusahaan (data)
  *   protocols.ts → tabel dosis protokol padi (data)
  *   dict/*.ts    → teks naratif per halaman (ID + EN)
  *

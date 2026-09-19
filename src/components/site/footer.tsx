@@ -2,7 +2,7 @@
 
 /** 
  * Footer resmi PT Biotek Agro Nusantara:
- * Profil produsen in-house, navigasi lengkap, kontak & fasilitas pabrik Bandung, marketplace resmi, dan akses admin portal.
+ * Profil produsen in-house, navigasi lengkap, kontak & fasilitas pabrik Bandung, jaminan pengiriman langsung, dan akses admin portal.
  */
 
 import {
@@ -174,31 +174,28 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Kolom 4: Marketplace & Kerja Sama (lg: 3 cols) */}
+          {/* Kolom 4: Pengiriman Langsung & Kerja Sama (lg: 3 cols) */}
           <div className="lg:col-span-3 space-y-3">
             <h3 className="text-xs font-bold uppercase tracking-[0.18em] text-primary-foreground/60">
-              {common.labels.marketplace[lang]}
+              {common.labels.directShipping[lang]}
             </h3>
-            <p className="text-xs text-primary-foreground/75">
+            <p className="text-xs text-primary-foreground/75 leading-relaxed">
               {lang === "id"
-                ? "Dapatkan produk original BIO7 melalui kanal marketplace resmi:"
-                : "Purchase genuine BIO7 through our official marketplace channels:"}
+                ? "Produk original BIO7 dikirim langsung dari fasilitas kultur & manufaktur terpadu Bandung ke seluruh wilayah Indonesia dan pengadaan ekspor."
+                : "Genuine BIO7 products ship directly from our integrated culture & manufacturing facility in Bandung across Indonesia and for export orders."}
             </p>
-            <ul className="space-y-2 text-xs">
-              {SITE.marketplaces.map((m) => (
-                <li key={m.name}>
-                  <a
-                    href={`${m.url}/search?q=${encodeURIComponent(m.query)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-lg border border-primary-foreground/15 bg-primary-foreground/5 px-3 py-1.5 text-primary-foreground/90 transition-all hover:bg-primary-foreground/10 hover:text-white"
-                  >
-                    <ExternalLink className="h-3 w-3 text-terra" aria-hidden="true" />
-                    <span>Toko Resmi {m.name}</span>
-                  </a>
-                </li>
-              ))}
-            </ul>
+
+            <div className="rounded-xl border border-primary-foreground/15 bg-primary-foreground/5 p-3 space-y-2">
+              <div className="flex items-center gap-2 text-xs font-semibold text-white">
+                <ShieldCheck className="h-4 w-4 text-leaf shrink-0" />
+                <span>{lang === "id" ? "Jaminan 100% Produk Asli" : "100% Genuine Guaranteed"}</span>
+              </div>
+              <p className="text-[11px] text-primary-foreground/70 leading-relaxed">
+                {lang === "id"
+                  ? "Tanpa perantara pihak ketiga, didampingi protokol dosis presisi tim agronomi."
+                  : "Direct manufacturer supply with precision dosing protocols by agronomy team."}
+              </p>
+            </div>
 
             <div className="pt-2">
               <a

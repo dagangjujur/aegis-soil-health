@@ -6,7 +6,7 @@
  */
 
 import { useState } from "react";
-import { Mail, Clock, ExternalLink, Send, MapPin, MessageSquareText } from "lucide-react";
+import { Mail, Clock, Send, MapPin, MessageSquareText } from "lucide-react";
 import { Section, SectionHeading } from "../section";
 import { WhatsAppCTA } from "../whatsapp-cta";
 import { WhatsAppIcon } from "../logo";
@@ -143,24 +143,21 @@ export function KontakView() {
             <div className="rounded-2xl border border-border bg-card p-5">
               <p className="flex items-center gap-2.5 text-sm font-bold text-foreground">
                 <MapPin className="h-5 w-5 text-terra" aria-hidden="true" />
-                {kk.channels.marketplace[lang]}
+                {kk.channels.directShipping[lang]}
               </p>
-              <ul className="mt-3 space-y-2">
-                {SITE.marketplaces.map((m) => (
-                  <li key={m.name}>
-                    <a
-                      href={`${m.url}/search?q=${encodeURIComponent(m.query)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline"
-                    >
-                      <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
-                      {m.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-2 text-xs text-muted-foreground">{kk.channels.marketplaceNote[lang]}</p>
+              <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
+                {kk.channels.directShippingNote[lang]}
+              </p>
+              <div className="mt-3.5 space-y-2 rounded-xl bg-paper-deep/70 p-3 text-xs text-foreground/90">
+                <p className="font-semibold text-primary">
+                  {lang === "id" ? "Cakupan Distribusi:" : "Distribution Coverage:"}
+                </p>
+                <ul className="space-y-1 text-muted-foreground">
+                  <li>• {lang === "id" ? "Pulau Jawa (HET Rp55.000)" : "Java Island (HET Rp55,000)"}</li>
+                  <li>• {lang === "id" ? "Luar Pulau Jawa (HET Rp65.000)" : "Outside Java (HET Rp65,000)"}</li>
+                  <li>• {lang === "id" ? "Luar Indonesia / Ekspor (HET Rp75.000)" : "Outside Indonesia / Export (HET Rp75,000)"}</li>
+                </ul>
+              </div>
             </div>
 
             <div className="rounded-2xl border border-border bg-paper-deep/60 p-5">

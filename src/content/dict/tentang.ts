@@ -80,8 +80,8 @@ export const kontak = {
   meta: {
     title: { id: "Kontak — PT Biotek Agro Nusantara", en: "Contact — PT Biotek Agro Nusantara" } as Locale,
     description: {
-      id: "Hubungi PT Biotek Agro Nusantara: WhatsApp (+62) 852 2121 2223, email, marketplace Shopee/Tokopedia/Lazada. Senin–Sabtu 07.30–17.30 WIB.",
-      en: "Contact PT Biotek Agro Nusantara: WhatsApp (+62) 852 2121 2223, email, Shopee/Tokopedia/Lazada marketplaces. Monday–Saturday 07:30–17:30 WIB.",
+      id: "Hubungi PT Biotek Agro Nusantara: WhatsApp (+62) 852 2121 2223, email resmi, pengiriman langsung dari Bandung ke seluruh Indonesia & ekspor. Senin–Sabtu 07.30–17.30 WIB.",
+      en: "Contact PT Biotek Agro Nusantara: WhatsApp (+62) 852 2121 2223, official email, direct shipping from Bandung across Indonesia & export. Monday–Saturday 07:30–17:30 WIB.",
     } as Locale,
   },
   hero: {
@@ -97,8 +97,11 @@ export const kontak = {
     waNote: { id: "Respon tercepat — konsultasi & pemesanan", en: "Fastest response — consultation & orders" } as Locale,
     email: { id: "Email", en: "Email" } as Locale,
     emailNote: { id: "Untuk dokumen & penawaran formal", en: "For documents & formal quotations" } as Locale,
-    marketplace: { id: "Marketplace", en: "Marketplace" } as Locale,
-    marketplaceNote: { id: "Untuk pembelian e-commerce langsung", en: "For direct e-commerce purchase" } as Locale,
+    directShipping: { id: "Pengiriman Langsung Pabrik", en: "Direct Factory Shipping" } as Locale,
+    directShippingNote: {
+      id: "Pemesanan dikirim langsung dari fasilitas kultur Bandung ke seluruh Indonesia & ekspor",
+      en: "Orders shipped directly from Bandung culture facility across Indonesia & export",
+    } as Locale,
     hours: { id: "Jam operasional", en: "Operating hours" } as Locale,
   },
   form: {

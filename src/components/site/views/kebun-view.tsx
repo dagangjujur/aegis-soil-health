@@ -115,19 +115,45 @@ export function KebunView() {
         </p>
       </Section>
 
-      {/* 5. KOMODITAS */}
+      {/* 5. KOMODITAS & FOTO SAYURAN HORTIKULTURA */}
       <Section tone="paper">
         <SectionHeading title={kb.crops.title} />
+
+        {/* Banner Ilustrasi Sayuran & Hortikultura Sehat */}
+        <div className="mb-8 overflow-hidden rounded-3xl border border-border shadow-md">
+          <div className="relative h-56 sm:h-64 w-full">
+            <img
+              src="/kebun-sayur.jpg"
+              alt="Budidaya Sayuran & Hortikultura Sehat Berbasis Mikroba Tanah Aktif"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
+            <div className="absolute bottom-4 left-4 right-4 sm:bottom-5 sm:left-6 sm:right-6 text-white">
+              <span className="inline-block rounded-md bg-leaf px-2.5 py-1 text-xs font-bold uppercase tracking-wider text-white">
+                Nutrisi Organik & Kesegaran Alami
+              </span>
+              <p className="mt-1.5 font-display text-lg sm:text-xl font-bold">
+                Meningkatkan Ketahanan Tanaman Terhadap Cekaman Cuaca & Penyakit Akar
+              </p>
+              <p className="text-xs sm:text-sm text-white/80 max-w-2xl">
+                Konsorsium mikroba BIO7 merangsang perakaran intensif, mempercepat pembesaran buah dan umbi tanpa merusak ekosistem tanah.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {kb.crops.items.map((crop, i) => (
             <li
               key={crop.name.en}
               className={cn(
-                "flex items-start gap-3 rounded-xl border border-border bg-card p-4",
+                "flex items-start gap-3 rounded-xl border border-border bg-card p-4 shadow-xs transition-colors hover:border-primary/40",
                 i === 0 && "border-primary/30"
               )}
             >
-              <TreePalm className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
+              <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-terra/10 text-terra">
+                <TreePalm className="h-4.5 w-4.5" aria-hidden="true" />
+              </div>
               <div>
                 <p className="text-sm font-bold text-foreground">{crop.name[lang]}</p>
                 <p className="mt-0.5 text-xs leading-relaxed text-muted-foreground">{crop.note[lang]}</p>
