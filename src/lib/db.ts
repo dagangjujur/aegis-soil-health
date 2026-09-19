@@ -5,7 +5,7 @@
  * 
  * Abstraksi ini menyediakan antarmuka kompatibel untuk:
  * - db.post (findMany, findUnique, create, update, delete)
- * - db.partner (findMany, create, update, delete)
+ * - db.partner (findMany, findUnique, create, update, delete)
  * - db.admin (findFirst, update)
  */
 
@@ -216,6 +216,25 @@ export const db = {
   },
 
   partner: {
+    async findUnique(args: { where: { id: string } }) {
+      const d1 = getD1()
+      if (d1) {
+        const sql = 'SELECT * FROM "Partner" WHERE "id" = ? LIMIT 1'
+        const stmt = d1.prepare(sql).bind(args.where.id)
+        const row = (await stmt.first()) as any
+
+        if (!row) return null
+        return {
+          ...row,
+          createdAt: parseDate(row.createdAt),
+          updatedAt: parseDate(row.updatedAt),
+        }
+      }
+
+      const p = await getPrisma()
+      return p.partner.findUnique(args)
+    },
+
     async findMany(args?: { orderBy?: any }) {
       const d1 = getD1()
       if (d1) {
