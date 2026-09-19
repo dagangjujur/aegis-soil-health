@@ -38,9 +38,9 @@ export function BlogView() {
 
   useEffect(() => {
     fetch("/api/posts")
-      .then((res) => (res.ok ? res.json() : []))
+      .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
-        if (Array.isArray(data) && data.length > 0) setPosts(data);
+        if (Array.isArray(data)) setPosts(data);
       })
       .catch((err) => console.error(err));
   }, []);

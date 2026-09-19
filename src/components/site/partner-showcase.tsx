@@ -43,9 +43,9 @@ export function PartnerShowcase() {
 
   useEffect(() => {
     fetch("/api/partners")
-      .then((res) => (res.ok ? res.json() : []))
+      .then((res) => (res.ok ? res.json() : null))
       .then((data) => {
-        if (Array.isArray(data) && data.length > 0) {
+        if (Array.isArray(data)) {
           setPartners(data);
         }
       })
