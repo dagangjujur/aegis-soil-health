@@ -166,12 +166,15 @@ export default function AdminDashboardPage() {
     if (!confirm("Yakin ingin menghapus partner ini?")) return;
     try {
       const res = await fetch(`/api/partners?id=${id}`, { method: "DELETE" });
+      const data = await res.json().catch(() => ({}));
       if (res.ok) {
-        setMsg({ type: "success", text: "Partner berhasil dihapus" });
+        setMsg({ type: "success", text: data.message || "Partner berhasil dihapus" });
         loadPartners();
+      } else {
+        setMsg({ type: "error", text: data.error || "Gagal menghapus partner" });
       }
     } catch {
-      setMsg({ type: "error", text: "Gagal menghapus partner" });
+      setMsg({ type: "error", text: "Terjadi kesalahan jaringan saat menghapus partner" });
     }
   };
 

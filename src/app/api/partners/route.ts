@@ -99,6 +99,15 @@ export async function DELETE(req: Request) {
       return NextResponse.json({ error: 'ID partner diperlukan' }, { status: 400 })
     }
 
+    const existing = await db.partner.findUnique({
+      where: { id },
+    })
+
+    if (!existing) {
+      // Jika sudah tidak ada di DB, anggap berhasil agar UI tidak stuck
+      return NextResponse.json({ success: true, message: 'Partner sudah tidak ada' })
+    }
+
     await db.partner.delete({
       where: { id },
     })
@@ -106,6 +115,9 @@ export async function DELETE(req: Request) {
     return NextResponse.json({ success: true, message: 'Partner berhasil dihapus' })
   } catch (error) {
     console.error('Delete partner error:', error)
-    return NextResponse.json({ error: 'Gagal menghapus partner' }, { status: 500 })
+    return NextResponse.json(
+      { error: error instanceof Error ? error.message : 'Gagal menghapus partner' },
+      { status: 500 }
+    )
   }
 }
